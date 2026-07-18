@@ -1,0 +1,262 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "Name",
+    "DESCRIPTION": "Description. NL Second line.",
+    "UPGRADE_DESCRIPTION": "This will automatically be used if the card is upgraded. Remove it if unneeded.",
+    "EXTENDED_DESCRIPTION": [
+      "You can put more text in here.",
+      "If you need to use it for stuff.",
+      "Blizzard is a good example for this."
+    ]
+  },
+  "${modID}:Pierce": {
+    "NAME": "Pierce",
+    "DESCRIPTION": "Deal 100 Damage ",
+    "UPGRADE_DESCRIPTION": "Deal 400 Damage"
+  },
+  "${modID}:Strike": {
+    "NAME": "Strike",
+    "DESCRIPTION": "Deal !D! Damage ",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage"
+  },
+  "${modID}:Defend": {
+    "NAME": "Defend",
+    "DESCRIPTION": "Gain !B! Block ",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block"
+  },
+  "${modID}:Dee": {
+    "NAME": "Tweedle Dee & Dum six",
+    "DESCRIPTION": "Deal !D! Damage twice. NL Spend 3 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage twice. NL Spend 3 Mana"
+  },
+  "${modID}:Circuts": {
+    "NAME": "Circuts",
+    "DESCRIPTION": "Gain 2 Mana",
+    "UPGRADE_DESCRIPTION": "Gain 3 Mana"
+  },
+  "${modID}:DiddleDiddleCard": {
+    "NAME": "DiddleDiddle",
+    "DESCRIPTION": "Apply 1 weak, 1 Vulnerable, and Gain 1 Mana. NL Innate",
+    "UPGRADE_DESCRIPTION": "Apply 1 weak, 1 Vulnerable, and Gain 1 Mana. NL Innate"
+  },
+  "${modID}:Gandr": {
+    "NAME": "Gandr",
+    "DESCRIPTION": "Deal !D! Damage, Apply Vulnerable 1",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage, Apply Vulnerable 1. NL Draw 1 Card"
+  },
+  "${modID}:BreakDown": {
+    "NAME": "BreakDown",
+    "DESCRIPTION": "At the start of your turn discard a card then Draw 1, gain 1 Mana. NL Cost 5 Mana",
+    "UPGRADE_DESCRIPTION": "At the start of your turn discard a card then Draw 1, gain 1 Mana. NL Cost 5 Mana. NL Retain"
+  },
+  "${modID}:EnchantingEyes": {
+    "NAME": "EnchantingEyes",
+    "DESCRIPTION": "Apply 1 weak and draw 1 card",
+    "UPGRADE_DESCRIPTION": "Apply 1 weak and draw 1 card"
+  },
+  "${modID}:ScratchDumpty": {
+    "NAME": "ScratchDumpty",
+    "DESCRIPTION": "Deal !D! Damage. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Cost 2 Mana"
+  },
+  "${modID}:SecondTicket": {
+    "NAME": "SecondTicket",
+    "DESCRIPTION": "Deal 2 Damage to self. Gain 1 Intangible. NL Exhaust. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Deal 2 Damage to self. Gain 1 Intangible. NL Exhaust. NL Cost 1 Mana"
+  },
+  "${modID}:Penguin": {
+    "NAME": "Penguin",
+    "DESCRIPTION": "Apply 1 weak and -1 strength. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Apply 1 weak and -1 strength. NL Cost 2 mana. NL Plays twice"
+  },
+  "${modID}:TeaTime": {
+    "NAME": "TeaTime",
+    "DESCRIPTION": "Heal 7 at the end of battle. NL Cost 3 Mana",
+    "UPGRADE_DESCRIPTION": "Heal 10 at the end of battle. NL Cost 3 Mana"
+  },
+  "${modID}:Surge": {
+    "NAME": "Surge",
+    "DESCRIPTION": "Double mana count. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Double mana count. NL Exhaust. NL Draw a card"
+  },
+  "${modID}:SixSingingChocolates": {
+    "NAME": "SixSingingChocolates",
+    "DESCRIPTION": "Heal 2 HP X times mana count. NL does not consume mana",
+    "UPGRADE_DESCRIPTION": "Heal 2 HP X+2 times mana count. NL does not consume mana"
+  },
+  "${modID}:Dice": {
+    "NAME": "Dice",
+    "DESCRIPTION": "Random chance to Gain 2 Dexterity. Gain 2 Strength. NL Apply 2 Weaken. Apply 2 Vulnerable. NL Gain !B! shield. deal !D! Damage. NL Cost 3 Mana",
+    "UPGRADE_DESCRIPTION": "Random chance to Gain 2 Dexterity. Gain 2 Strength. NL Apply 2 Weaken. Apply 2 Vulnerable. NL Gain !B! shield. Deal !D! Damage. NL Cost 3 Mana. NL plays twice"
+  },
+  "${modID}:Nimble": {
+    "NAME": "Nimble",
+    "DESCRIPTION": "Draw 2 Cards. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Draw 2 Cards"
+  },
+  "${modID}:AokoBlast": {
+    "NAME": "AokoBlast",
+    "DESCRIPTION": "Deal !D! Damage to ALL enemies. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to ALL enemies. NL Cost 2 Mana"
+  },
+  "${modID}:ShinyStar": {
+    "NAME": "ShinyStar",
+    "DESCRIPTION": "Choose any of Alice's card at play it at the start of each turn for free. NL Retain. NL Does not Stack",
+    "UPGRADE_DESCRIPTION": "Choose any of Alice's card at play it at the start of each turn for free. NL Retain. NL Does not Stack "
+  },
+  "${modID}:Shield": {
+    "NAME": "Shield",
+    "DESCRIPTION": "Gain !B! Block, if you have 5 or more mana draw 1 card",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block, if you have 5 or more mana draw 1 card"
+  },
+  "${modID}:Relaxed": {
+    "NAME": "Relaxed",
+    "DESCRIPTION": "Double MP gained for one turn. NL Gain !B! Block NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Double MP gained for one turn. NL Gain !B! Block. NL Cost 2 Mana"
+  },
+  "${modID}:Observation": {
+    "NAME": "Observation",
+    "DESCRIPTION": "Converts all energy to mana",
+    "UPGRADE_DESCRIPTION": "Converts all energy to mana. NL +1 Mana"
+  },
+  "${modID}:Silverware": {
+    "NAME": "Silverware",
+    "DESCRIPTION": "Deal !D! Damage. NL Gain !B! Block",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Gain !B! Block"
+  },
+  "${modID}:BreadMen": {
+    "NAME": "BreadMen",
+    "DESCRIPTION": "Deal !D! Damage. NL Heal 2 HP",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Heal 5 HP"
+  },
+  "${modID}:MagicalCrest": {
+    "NAME": "MagicalCrest",
+    "DESCRIPTION": "If Mana is 6 or higher Gain 2 Strength. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "If Mana is 6 or higher Gain 3 Strength."
+  },
+  "${modID}:Snarkification": {
+    "NAME": "Snarkification",
+    "DESCRIPTION": "Deal !D! damage, if target is weakened Gain 2 Mana. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, if target is weakened Gain 2 Mana. NL Cost 2 Mana"
+  },
+  "${modID}:Float": {
+    "NAME": "Float",
+    "DESCRIPTION": "Gain !B! Block and 1 Mana",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block and 1 Mana"
+  },
+  "${modID}:Strategy": {
+    "NAME": "Strategy",
+    "DESCRIPTION": "only playable if no Mana and Energy remain. Deal !D! Damage, Gain !B! Block, Gain 3 Mana. NL Gain 20 gold and Gain 1 Energy.",
+    "UPGRADE_DESCRIPTION": "only playable if no Mana and Energy remain. Deal !D! Damage, Gain !B! Block, Gain 4 Mana. NL Gain 30 gold and Gain 2 Energy."
+  },
+  "${modID}:Bite": {
+    "NAME": "Bite",
+    "DESCRIPTION": "Deal !D! Damage, Gain 1 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage, Gain 2 Mana"
+  },
+  "${modID}:Boulder": {
+    "NAME": "Boulder",
+    "DESCRIPTION": "Gain !B! Block. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block. NL Cost 1 Mana"
+  },
+  "${modID}:Stab": {
+    "NAME": "Stab",
+    "DESCRIPTION": "Deal !D! Damage, Apply 1 Weak, and Gain 1 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage, Apply 1 Weak, and Gain 1 Mana"
+  },
+  "${modID}:Barrier": {
+    "NAME": "Barrier",
+    "DESCRIPTION": "Gain !B! Block, Remove all of you debuffs. NL Cost X Mana",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block, Remove all of you debuffs. NL Cost X Mana"
+  },
+  "${modID}:Graze": {
+    "NAME": "Graze",
+    "DESCRIPTION": "Deal !D! Damage 7 times. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage 10 times. NL Cost 1 Mana"
+  },
+  "${modID}:Drawing": {
+    "NAME": "Drawing",
+    "DESCRIPTION": "Draw 4 cards. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Draw 5 cards. NL Cost 2 Mana"
+  },
+  "${modID}:Devour": {
+    "NAME": "Devour",
+    "DESCRIPTION": "Deal !D! Damage for each mana generated this combat. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage for each mana generated this combat"
+  },
+  "${modID}:VoiceOfYumina": {
+    "NAME": "VoiceOfYumina",
+    "DESCRIPTION": "Gain Strength equal to half of your current mana (rounded down) at the start of your turn, Apply 99 Frail to self once (Does not stack)",
+    "UPGRADE_DESCRIPTION": "Gain Strength equal to half of your current mana (rounded down) at the start of your turn, Apply 99 Frail to self once (Does not stack). NL Retain"
+  },
+  "${modID}:Flowing": {
+    "NAME": "Flowing",
+    "DESCRIPTION": "At the start of your turn consume 1 Mana and draw 2 cards. NL Cost 5 Mana. NL (Does not stack)",
+    "UPGRADE_DESCRIPTION": "At the start of your turn consume 1 Mana and draw 2 cards. NL Cost 4 Mana. NL (Does not stack)"
+  },
+  "${modID}:WitchesBlood": {
+    "NAME": "Witches Blood",
+    "DESCRIPTION": "Heal 1 HP everytime you hit an enemy",
+    "UPGRADE_DESCRIPTION": "Heal 1 HP everytime you hit an enemy. NL Retain"
+  },
+  "${modID}:MoonDrip": {
+    "NAME": "MoonDrip",
+    "DESCRIPTION": "Apply 2 Weak and Apply 2 Vulnerable. NL Exhaust. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Apply 3 Weak and Apply 3 Vulnerable. NL Exhaust. NL Cost 1 Mana"
+  },
+  "${modID}:Witch": {
+    "NAME": "Witch",
+    "DESCRIPTION": "Every card now cost +1 Mana but Attacks and Skills gains 1 Replay. NL Cost 3 Mana",
+    "UPGRADE_DESCRIPTION": "Every card now cost +1 Mana but Attacks and Skills gains 1 Replay. NL Cost 3 Mana"
+  },
+  "${modID}:Momentum": {
+    "NAME": "Momentum",
+    "DESCRIPTION": "Deal !D! Damage. Gain 1 Energy next turn",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Gain 1 Energy next turn"
+  },
+  "${modID}:Break": {
+    "NAME": "Break",
+    "DESCRIPTION": "Deal !D! Damage. if no Mana was generated this turn deal an additional !M! Damage",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. if no Mana was generated this turn deal an additional !M! Damage"
+  },
+  "${modID}:OffGuard": {
+    "NAME": "OffGuard",
+    "DESCRIPTION": "Deal !D! Damage and Draw 1 Card, if Drawn card is a skill gain 1 Energy. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and Draw 2 Card, if Drawn card is a skill gain 1 Energy. NL Cost 1 Mana"
+  },
+  "${modID}:WitchsDomain": {
+    "NAME": "Witch's Domain",
+    "DESCRIPTION": "Deal !D! Damage, hit again for every type of debuff on the enemy. NL Cost 5 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage, hit again for every type of debuff on the enemy. NL Cost 5 Mana"
+  },
+  "${modID}:SweetsHearts": {
+    "NAME": "Sweet Hearts",
+    "DESCRIPTION": "Choose one card from your deck to make a copy of. NL Cost 3 Mana. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Choose one card from your deck to make a copy of. NL Cost 3 Mana"
+  },
+  "${modID}:Wandersnatch": {
+    "NAME": "WanderSnatch",
+    "DESCRIPTION": "Deal !D! Damage to all enemies, for every kill gain 2 Mana and 6 HP. NL Cost 4 Mana. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage to all enemies, for every kill gain 3 Mana and 8 HP. NL Cost 4 Mana. NL Exhaust"
+  },
+  "${modID}:FlatSnark": {
+    "NAME": "FlatSnark",
+    "DESCRIPTION": "Deal !D! Damage. Apply 2 Weakness. If enemy is below 50% HP, deal 2x Damage. NL Cost 6 Mana. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Apply 3 Weakness. If enemy is below 50% HP, deal 2x Damage. NL Cost 6 Mana. NL Exhaust"
+  },
+  "${modID}:ThamesTroll": {
+    "NAME": "ThamesTroll",
+    "DESCRIPTION": "Gain !B! Block, 10 Plated Armor, and 2 Dexterity. NL Cost 8 Mana. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Gain !B! Block, 10 Plated Armor, and 2 Dexterity. NL Cost 8 Mana. NL Exhaust"
+  },
+  "${modID}:TheGreatThree": {
+    "NAME": "TheGreatThree",
+    "DESCRIPTION": "Choose one of the Great Three to add to your hand",
+    "UPGRADE_DESCRIPTION": "Choose one of the Upgraded Great Three to add to your hand"
+  },
+  "${modID}:SnarkInABottle": {
+    "NAME": "Snark in A Bottle",
+    "DESCRIPTION": "Summons FlatSnark. Deal 8 Damage to self. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Summons FlatSnark. Deal 8 Damage to self. NL Exhaust"
+  }
+}

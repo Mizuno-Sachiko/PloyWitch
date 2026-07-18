@@ -1,0 +1,87 @@
+package PloyWitch.powers;
+
+import PloyWitch.relics.ScrippsHumpty;
+import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
+import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.powers.AbstractPower;
+
+public class ManaPower extends AbstractPower {
+
+    public static final String POWER_ID = PloyWitch.BasicMod.makeID("ManaPower");
+    public static final int MAX_MANA = 10;
+
+    public static boolean FREE_NEXT_CARD = false;
+    public static boolean SHINY_STAR_FREE = false;
+
+    public static int manaGeneratedThisCombat = 0;
+    public static int manaGeneratedThisTurn = 0;
+
+    public ManaPower(AbstractCreature owner, int amount) {
+        this.ID = POWER_ID;
+        this.name = "Mana";
+        this.owner = owner;
+        this.amount = Math.min(amount, MAX_MANA);
+        this.type = PowerType.BUFF;
+        this.isTurnBased = false;
+        this.img = ImageMaster.loadImage("PloyWitch/images/powers/Mana.png");
+        updateDescription();
+    }
+
+    @Override
+    public void stackPower(int stackAmount) {
+        this.flash();
+        this.amount = Math.min(this.amount + stackAmount, MAX_MANA);
+        updateDescription();
+    }
+
+
+
+    public boolean spendMana(int cost) {
+
+
+
+        if (SHINY_STAR_FREE) {
+            SHINY_STAR_FREE = false;
+            updateDescription();
+            return true;
+        }
+
+        if (FREE_NEXT_CARD) {
+            FREE_NEXT_CARD = false;
+            updateDescription();
+            return true;
+        }
+
+        if (this.amount >= cost) {
+            this.amount -= cost;
+
+            if (AbstractDungeon.player.hasRelic(ScrippsHumpty.ID)) {
+                ((ScrippsHumpty)AbstractDungeon.player.getRelic(ScrippsHumpty.ID)).onManaSpent();
+            }
+
+            updateDescription();
+            return true;
+        }
+
+        return false;
+    }
+
+    //Used Mainly For "Devour"
+    @Override
+    public void onVictory() {
+        manaGeneratedThisCombat = 0;
+    }
+
+    //Used for "Break"
+    @Override
+    public void atEndOfTurn(boolean isPlayer) {
+        manaGeneratedThisTurn = 0;
+    }
+
+
+    @Override
+    public void updateDescription() {
+        this.description = "You have " + amount + " Mana. (Max 10)";
+    }
+}

@@ -1,0 +1,99 @@
+{
+  "${modID}:EventID": {
+    "NAME": "Event Name",
+    "DESCRIPTIONS": [
+      "This is event text, generally used to describe what's happening.",
+      "#g~This~ #g~text~ #g~is~ #g~green~ #g~and~ #g~wavy.~",
+      "#r@RED@ #r@AND@ #r@VIBRATING@ #r@TEXT.@",
+      "#rRed #gGreen #yYellow #bBlue #pPurple. ~Wavy~ @vibrating.@",
+      "You have to mark every word individually.",
+      "You can also use [#ffffff]white[] hex color codes like this to color text.",
+      "Hex color codes also work in card text! But not on keywords, without some workarounds."
+    ],
+    "OPTIONS": [
+      "[Action Description] What you actually get.",
+      "[Denial] #rLose #r1 #rMax #rHP. Bad stuff is red.",
+      "[Acceptance] #gGain #gApotheosis. Good stuff is green.",
+      "[Leave]",
+      "Select card to remove. (You can also stick extra text like this in here.)"
+    ]
+  },
+  "${modID}:PloyShop": {
+    "NAME": "Ploy Shop",
+    "DESCRIPTIONS": [
+      "You step inside a bakery, three interesting objects sit on the shelfs",
+      "You nab Lost Robin Rondo",
+      "You nab Scripps Humpty",
+      "You nab a rare relic",
+      "You leave"
+    ],
+    "OPTIONS": [
+
+        "[Buy] #y50 #yGold: #gObtain #gLost #gRobin #gRondo.",
+        "[Buy] #y80 #yGold: #gObtain #gScripps #gHumpty.",
+        "[Buy] #y120 #yGold: #gObtain #ga #gRandom #gRare #gRelic.",
+        "[Locked] Requires: 50 Gold. Lost Robin Rondo",
+        "[Locked] Requires: 80 Gold. Scripps Humpty",
+        "[Locked] Requires: 120 Gold.",
+        "[Decline]",
+        "[Leave]"
+
+    ]
+  },
+  "${modID}:KitsyLand": {
+    "NAME": "Kitsy Land",
+    "DESCRIPTIONS": [
+      "A familiar park greets your eyes, much to your dismay",
+      "You use FlatSnark to restore the park. The theme park is now restored to its former glory",
+      "The irritating thought makes you want to destroy it even more, and so you do, leaving behind nothing",
+      "You are uninterested in this park and leave, yet something finds it's way into your pockets"
+
+    ],
+    "OPTIONS": [
+
+      "[Restore] #gGain #gSnark #gin #gA #gBottle",
+      "[Destroy] #gGain #g75 #yGold",
+      "[Ignore it] #gUpgrade #gtwo #grandom #gcards",
+      "[Leave]",
+      "[Decline]"
+
+
+    ]
+  },
+  "${modID}:BlueGarden": {
+    "NAME": "Blue Garden",
+    "DESCRIPTIONS": [
+      "A familiar Garden, one you could never forget greets your eyes once again. ",
+      "You lay down on the flowers and drift off to sleep.",
+      "These flowers are unpleasant they remind you of a certain someone"
+    ],
+    "OPTIONS": [
+
+      "[Heal] #gHeal #gfor #g35% #gof #gHP",
+      "[Destroy] #gGain #g50 #yGold",
+      "[Leave]"
+
+
+
+    ]
+  },
+  "${modID}:ShinyStarEvent": {
+    "NAME": "Shiny Star",
+    "DESCRIPTIONS": [
+      "You stumble upon a familiar ploy, a failed experiment. Yet somethings different about it this time, its radiating magical energy, waiting for a worth wish to grant",
+      "You wish for riches. You blink once only for you to be knee deep in pure gold coins, enough to order takeout forever!",
+      "You wish for power. Five objects fall at your feet, magical energy pulsing from them",
+      "You wish for nothing. You ignore it's request and grab what was once yours reclaiming it, then you press forward."
+    ],
+    "OPTIONS": [
+
+      "[Riches] #gGain #g999 #yGold",
+      "[Power] #gGain #g5 #gCommon #gRelics",
+      "[Nothing] #gGain #gShinyStar #gCard",
+      "[Leave]"
+
+
+
+    ]
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "Good Relic",
+    "FLAVOR": "Flavor text displayed in detailed relic view.",
+    "DESCRIPTIONS": [
+      "Gain [E] at the start of your turn. [E] is an energy icon."
+    ]
+  },
+  "${modID}:Did": {
+    "NAME": "Diddle Diddle",
+    "FLAVOR": "Quite Reliable",
+    "DESCRIPTIONS": [
+      "At the start of combat, gain #b",
+      " #yMana."
+
+    ]
+  },
+  "${modID}:GazeOfTheMoon": {
+    "NAME": "Gaze Of The Moon",
+    "FLAVOR": "Oil of the moon', 'The Unreahable' it goes by many names yet one intention to degrade its enemies into dust,",
+    "DESCRIPTIONS": [
+      "When applying weakness gain #b",
+      " #yMana."
+
+    ]
+  },
+  "${modID}:SnowWhite": {
+"NAME": "Snow White",
+"FLAVOR": "Completely useless but still worth keeping. The snowfall is calming",
+"DESCRIPTIONS": [
+"Replaces DiddleDiddle. At the start of combat, gain #b",
+" #yMana and #b1 #yMana per turn."
+
+]
+},
+  "${modID}:LostRobinRondo": {
+    "NAME": "Lost Robin Rondo",
+    "FLAVOR": "Robin's real body. Elegant and refined, what a difference",
+    "DESCRIPTIONS": [
+      "At the end of turn, gain",
+      "  Block equal to current Mana."
+
+    ]
+  },
+
+  "${modID}:MayRiddell": {
+    "NAME": "May Riddell",
+    "FLAVOR": "Annoying but harmless",
+    "DESCRIPTIONS": [
+      "If you have 5 or more Mana +2 to Dexterity",
+      "  and Strength."
+
+    ]
+  },
+  "${modID}:ScrippsHumpty": {
+    "NAME": "Scripps Humpty",
+    "FLAVOR": "The Witch's eye, no not her actual eye",
+    "DESCRIPTIONS": [
+      "When you spend Mana deal 5 damage to a",
+      " random Enemy."
+
+    ]
+  }
+
+}

@@ -31,6 +31,7 @@ public class Devour extends BaseCard {
     public Devour() {
         super(ID, info);
         setDamage(DAMAGE, UPG_DAMAGE);
+        setMagic(0);
         this.exhaust = true;
     }
 
@@ -53,14 +54,8 @@ public class Devour extends BaseCard {
     }
     @Override
     public void applyPowers() {
+        this.baseMagicNumber = this.magicNumber = ManaPower.manaGeneratedThisCombat;
         super.applyPowers();
-
-        int mana = ManaPower.manaGeneratedThisCombat;
-
-        this.rawDescription =
-                "Deal !D! damage for each mana generated this combat. (Currently " + mana + ")";
-
-        initializeDescription();
     }
     @Override
     public void onMoveToDiscard() {

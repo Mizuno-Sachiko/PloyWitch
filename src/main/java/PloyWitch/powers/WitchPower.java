@@ -60,7 +60,6 @@ public class WitchPower extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description =
-                "Whenever you play a non-Power card, it costs +1 Mana and is played a second time.";
+        this.description = DESCRIPTIONS[0];
     }
 }

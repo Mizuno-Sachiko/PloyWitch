@@ -2,8 +2,10 @@ package PloyWitch.powers;
 
 import PloyWitch.relics.ScrippsHumpty;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.ImageMaster;
+import com.megacrit.cardcrawl.localization.PowerStrings;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
 public class ManaPower extends AbstractPower {
@@ -17,15 +19,23 @@ public class ManaPower extends AbstractPower {
     public static int manaGeneratedThisCombat = 0;
     public static int manaGeneratedThisTurn = 0;
 
+    private final String[] DESCRIPTIONS;
+
     public ManaPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
-        this.name = "Mana";
+        PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
+        this.name = powerStrings.NAME;
+        this.DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         this.owner = owner;
         this.amount = Math.min(amount, MAX_MANA);
         this.type = PowerType.BUFF;
         this.isTurnBased = false;
         this.img = ImageMaster.loadImage("PloyWitch/images/powers/Mana.png");
         updateDescription();
+    }
+
+    public static String getNotEnoughManaMessage() {
+        return CardCrawlGame.languagePack.getUIString(POWER_ID).TEXT[0];
     }
 
     @Override
@@ -82,6 +92,6 @@ public class ManaPower extends AbstractPower {
 
     @Override
     public void updateDescription() {
-        this.description = "You have " + amount + " Mana. (Max 10)";
+        this.description = DESCRIPTIONS[0] + amount + DESCRIPTIONS[1] + MAX_MANA + DESCRIPTIONS[2];
     }
 }

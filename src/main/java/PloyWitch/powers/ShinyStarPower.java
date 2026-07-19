@@ -4,6 +4,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.CardGroup;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import PloyWitch.util.AliceCardPool;
@@ -50,7 +51,7 @@ public class ShinyStarPower extends BasePower {
                     AbstractDungeon.gridSelectScreen.open(
                             group,
                             1,
-                            "Choose an Alice card",
+                            CardCrawlGame.languagePack.getUIString(POWER_ID).TEXT[0],
                             false,
                             false,
                             false,
@@ -114,5 +115,10 @@ public class ShinyStarPower extends BasePower {
                 this.isDone = true;
             }
         });
+    }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
     }
 }

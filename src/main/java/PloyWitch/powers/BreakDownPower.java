@@ -3,6 +3,7 @@ package PloyWitch.powers;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 
@@ -40,7 +41,7 @@ public class BreakDownPower extends BasePower {
                     AbstractDungeon.gridSelectScreen.open(
                             AbstractDungeon.player.hand,
                             1,
-                            "Choose 1 card to shuffle into your draw pile",
+                            CardCrawlGame.languagePack.getUIString(POWER_ID).TEXT[0],
                             false,
                             false,
                             false,
@@ -70,7 +71,6 @@ public class BreakDownPower extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description =
-                "At the start of your turn, choose 1 card from your hand to shuffle into your draw pile. Gain 1 Mana. Draw 1 Card";
+        this.description = DESCRIPTIONS[0];
     }
 }

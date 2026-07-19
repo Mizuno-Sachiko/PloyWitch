@@ -181,8 +181,8 @@
   },
   "${modID}:Devour": {
     "NAME": "Devour",
-    "DESCRIPTION": "Deal !D! Damage for each mana generated this combat. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage for each mana generated this combat"
+    "DESCRIPTION": "Deal !D! Damage for each mana generated this combat. (Currently !M!) NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage for each mana generated this combat. (Currently !M!)"
   },
   "${modID}:VoiceOfYumina": {
     "NAME": "VoiceOfYumina",

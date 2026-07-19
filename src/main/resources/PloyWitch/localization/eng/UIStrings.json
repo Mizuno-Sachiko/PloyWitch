@@ -12,5 +12,40 @@
       "This": "Contains pairs of Strings, used to get values based on keys.",
       "This is a key": "This is a value."
     }
+  },
+  "${modID}:ManaPower": {
+    "TEXT": [
+      "Not enough Mana."
+    ]
+  },
+  "${modID}:Strategy": {
+    "TEXT": [
+      "Can't play this card!"
+    ]
+  },
+  "${modID}:BreakDown": {
+    "TEXT": [
+      "Choose 1 card to shuffle into your draw pile"
+    ]
+  },
+  "${modID}:ShinyStar": {
+    "TEXT": [
+      "Choose an Alice card"
+    ]
+  },
+  "${modID}:SweetHeartAction": {
+    "TEXT": [
+      "Choose a card to duplicate"
+    ]
+  },
+  "${modID}:TheGreatThree": {
+    "TEXT": [
+      "Choose a card to add to your hand"
+    ]
+  },
+  "${modID}:Relaxed": {
+    "TEXT": [
+      "Relaxed: Mana x2"
+    ]
   }
 }

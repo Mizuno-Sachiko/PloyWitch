@@ -40,7 +40,7 @@ public class Witch extends BaseCard {
         if (mana == null || mana.amount < this.magicNumber) {
 
 
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
 
             return false;
         }

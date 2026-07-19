@@ -3,10 +3,15 @@ package PloyWitch.powers;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 
+import static PloyWitch.BasicMod.makeID;
+
 public class SweetHeartAction extends AbstractGameAction {
+
+    private static final String UI_ID = makeID("SweetHeartAction");
 
     private final boolean upgraded;
 
@@ -23,7 +28,7 @@ public class SweetHeartAction extends AbstractGameAction {
             AbstractDungeon.gridSelectScreen.open(
                     AbstractDungeon.player.masterDeck,
                     1,
-                    "Choose a card to duplicate",
+                    CardCrawlGame.languagePack.getUIString(UI_ID).TEXT[0],
                     false
             );
 

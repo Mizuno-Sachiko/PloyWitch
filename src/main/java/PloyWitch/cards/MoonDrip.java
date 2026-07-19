@@ -36,7 +36,7 @@ public class MoonDrip extends BaseCard {
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
 
         if (mana == null || mana.amount < MANA_COST) {
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
             return false;
         }
 

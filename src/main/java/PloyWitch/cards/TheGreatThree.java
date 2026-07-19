@@ -4,6 +4,7 @@ import PloyWitch.character.Alice;
 import PloyWitch.util.CardStats;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
@@ -46,7 +47,7 @@ public class TheGreatThree extends BaseCard {
 
         AbstractDungeon.cardRewardScreen.customCombatOpen(
                 group.group,
-                "Choose a card to add to your hand",
+                CardCrawlGame.languagePack.getUIString(ID).TEXT[0],
                 false
         );
 

@@ -47,7 +47,7 @@ public class BreadMen extends BaseCard {
 
         if (mana == null || mana.amount < MANA_COST) {
 
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
 
             return false;
         }

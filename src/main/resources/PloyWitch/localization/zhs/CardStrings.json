@@ -181,8 +181,8 @@
   },
   "${modID}:Devour": {
     "NAME": "吞噬",
-    "DESCRIPTION": "本场战斗每获得过 1 点魔力，造成 !D! 点伤害。 NL 消耗。",
-    "UPGRADE_DESCRIPTION": "本场战斗每获得过 1 点魔力，造成 !D! 点伤害。"
+    "DESCRIPTION": "本场战斗每获得过 1 点魔力，造成 !D! 点伤害。（当前累计：!M!） NL 消耗。",
+    "UPGRADE_DESCRIPTION": "本场战斗每获得过 1 点魔力，造成 !D! 点伤害。（当前累计：!M!）"
   },
   "${modID}:VoiceOfYumina": {
     "NAME": "尤米娜之声",

@@ -1,1 +1,37 @@
-{}
+{
+  "${modID}:ManaPower": {
+    "TEXT": [
+      "魔力不足。"
+    ]
+  },
+  "${modID}:Strategy": {
+    "TEXT": [
+      "无法打出此牌！"
+    ]
+  },
+  "${modID}:BreakDown": {
+    "TEXT": [
+      "选择 1 张手牌洗入抽牌堆。"
+    ]
+  },
+  "${modID}:ShinyStar": {
+    "TEXT": [
+      "选择 1 张有珠卡牌。"
+    ]
+  },
+  "${modID}:SweetHeartAction": {
+    "TEXT": [
+      "选择 1 张要复制的牌。"
+    ]
+  },
+  "${modID}:TheGreatThree": {
+    "TEXT": [
+      "选择 1 张牌加入手牌。"
+    ]
+  },
+  "${modID}:Relaxed": {
+    "TEXT": [
+      "放松：魔力×2"
+    ]
+  }
+}

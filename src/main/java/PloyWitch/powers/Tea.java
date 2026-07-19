@@ -29,7 +29,6 @@ public class Tea extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description =
-                "Heal X at the end of battle";
+        this.description = DESCRIPTIONS[0];
     }
 }

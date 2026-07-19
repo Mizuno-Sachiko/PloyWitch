@@ -27,4 +27,5 @@ https://github.com/Alchyr/BasicMod/wiki
 
 ## Credits
 Skymaster21 - creator and developer
+
 Mizuno-Sachiko - Simplified Chinese localization and card bug fixes

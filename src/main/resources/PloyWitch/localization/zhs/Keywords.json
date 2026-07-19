@@ -1,0 +1,27 @@
+[
+  {
+    "PROPER_NAME": "魔力",
+    "NAMES": [
+      "魔力"
+    ],
+    "DESCRIPTION": "PloyWitch 的额外资源，用于支付部分卡牌效果。"
+  },
+  {
+    "PROPER_NAME": "Replay",
+    "NAMES": [
+      "replay",
+      "Replay"
+    ],
+    "DESCRIPTION": "带有 Replay 的攻击牌和技能牌会额外打出一次。"
+  },
+  {
+    "PROPER_NAME": "Ploy",
+    "NAMES": [
+      "ploy",
+      "Ploy",
+      "ploys",
+      "Ploys"
+    ],
+    "DESCRIPTION": "有珠使用的使魔。"
+  }
+]

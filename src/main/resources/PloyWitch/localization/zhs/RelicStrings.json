@@ -1,0 +1,57 @@
+{
+  "${modID}:RelicID": {
+    "NAME": "好遗物",
+    "FLAVOR": "详细遗物界面中显示的风味文本。",
+    "DESCRIPTIONS": [
+      "每回合开始时获得 [E]。[E] 是能量图标。"
+    ]
+  },
+  "${modID}:Did": {
+    "NAME": "夜之飨宴",
+    "FLAVOR": "相当可靠。",
+    "DESCRIPTIONS": [
+      "战斗开始时，获得 #b",
+      " #y魔力。"
+    ]
+  },
+  "${modID}:GazeOfTheMoon": {
+    "NAME": "月之凝视",
+    "FLAVOR": "“月之油”、“不可抵达之物”，它有许多名字，却只有一个意图：把敌人消磨成尘。",
+    "DESCRIPTIONS": [
+      "施加虚弱时，获得 #b",
+      " #y魔力。"
+    ]
+  },
+  "${modID}:SnowWhite": {
+    "NAME": "白雪",
+    "FLAVOR": "完全没用，但依然值得留着。落雪令人平静。",
+    "DESCRIPTIONS": [
+      "替换夜之飨宴。战斗开始时，获得 #b",
+      " #y魔力，并且每回合获得 #b1 #y魔力。"
+    ]
+  },
+  "${modID}:LostRobinRondo": {
+    "NAME": "蓝色知更鸟罗宾",
+    "FLAVOR": "知更鸟罗宾的本体。优雅而精致，差别真大。",
+    "DESCRIPTIONS": [
+      "回合结束时，获得",
+      " 等同于当前 魔力 的格挡。"
+    ]
+  },
+  "${modID}:MayRiddell": {
+    "NAME": "梅·莉黛尔",
+    "FLAVOR": "惹人烦，但没有害处。",
+    "DESCRIPTIONS": [
+      "若你有 5 或更多 魔力，敏捷和力量",
+      " 各 +2。"
+    ]
+  },
+  "${modID}:ScrippsHumpty": {
+    "NAME": "矮胖子剧本",
+    "FLAVOR": "有珠的左眼。不是假眼，只是被当作 Ploy。",
+    "DESCRIPTIONS": [
+      "当你花费 魔力 时，对一名",
+      " 随机敌人造成 5 点伤害。"
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "${modID}:PowerID": {
+    "NAME": "终极力量",
+    "DESCRIPTIONS": [
+      "你非常厉害，也非常强大。"
+    ]
+  },
+  "${modID}:BreakDown": {
+    "NAME": "回收",
+    "DESCRIPTIONS": [
+      "每回合开始时，选择 1 张牌弃掉，然后抽 1 张牌。",
+      "每回合开始时，选择 1 张牌弃掉，然后抽 1 张牌。"
+    ]
+  },
+  "${modID}:TeaTime": {
+    "NAME": "下午茶",
+    "DESCRIPTIONS": [
+      "战斗结束时回复生命。",
+      "战斗结束时回复生命。"
+    ]
+  },
+  "${modID}:ShinyStar": {
+    "NAME": "闪耀之星",
+    "DESCRIPTIONS": [
+      "免费打出一张有珠卡牌。",
+      "免费打出一张有珠卡牌。"
+    ]
+  },
+  "${modID}:Flowing": {
+    "NAME": "流转",
+    "DESCRIPTIONS": [
+      "每回合开始时，消耗 1 魔力 并抽 2 张牌。",
+      "每回合开始时，消耗 1 魔力 并抽 2 张牌。"
+    ]
+  },
+  "${modID}:WitchesBlood": {
+    "NAME": "魔女之血",
+    "DESCRIPTIONS": [
+      "每次击中回复 1 点生命。",
+      "每次击中回复 1 点生命。"
+    ]
+  },
+  "${modID}:Witch": {
+    "NAME": "魔女",
+    "DESCRIPTIONS": [
+      "此后每张牌额外花费 1 魔力，但攻击牌和技能牌获得 1 层 Replay。",
+      "此后每张牌额外花费 1 魔力，但攻击牌和技能牌获得 1 层 Replay。"
+    ]
+  },
+  "${modID}:SkillDetection": {
+    "NAME": "技能检测",
+    "DESCRIPTIONS": [
+      "若抽到的牌是技能牌，获得能量。",
+      "若抽到的牌是技能牌，获得能量。"
+    ]
+  }
+}

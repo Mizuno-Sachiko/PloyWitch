@@ -45,7 +45,7 @@ public class Snarkification extends BaseCard {
         if (!canUse) return false;
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
         if (mana == null || mana.amount < MANA_COST) {
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
             return false;
         }
         return true;

@@ -4,6 +4,7 @@ import PloyWitch.character.Alice;
 import PloyWitch.powers.ManaPower;
 import PloyWitch.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.vfx.combat.PowerBuffEffect;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -43,7 +44,7 @@ public class Relaxed extends BaseCard {
 
         if (mana == null || mana.amount < MANA_COST) {
 
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
 
             return false;
         }
@@ -65,7 +66,7 @@ public class Relaxed extends BaseCard {
         active = true;
 
         AbstractDungeon.effectList.add(
-                new PowerBuffEffect(p.hb.cX, p.hb.cY, "Relaxed: Mana x2")
+                new PowerBuffEffect(p.hb.cX, p.hb.cY, CardCrawlGame.languagePack.getUIString(ID).TEXT[0])
         );
 
     }

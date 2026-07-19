@@ -5,25 +5,39 @@
       "You are Very Cool and Strong."
     ]
   },
+  "${modID}:ManaPower": {
+    "NAME": "Mana",
+    "DESCRIPTIONS": [
+      "You have ",
+      " Mana. (Max ",
+      ")"
+    ]
+  },
+  "${modID}:Voice": {
+    "NAME": "VoiceofYumina",
+    "DESCRIPTIONS": [
+      "At the start of your turn, gain Strength equal to half your current Mana. Apply 99 Frail."
+    ]
+  },
   "${modID}:BreakDown": {
     "NAME": "BreakDown",
     "DESCRIPTIONS": [
-      "At the start of your turn choice one card to discard and Draw 1.",
-      "At the start of your turn choice one card to discard and Draw 1."
+      "At the start of your turn, choose 1 card from your hand to shuffle into your draw pile. Gain 1 Mana. Draw 1 Card",
+      "At the start of your turn, choose 1 card from your hand to shuffle into your draw pile. Gain 1 Mana. Draw 1 Card"
     ]
   },
   "${modID}:TeaTime": {
     "NAME": "TeaTime",
     "DESCRIPTIONS": [
-      "Heal at the end of battle",
-      "Heal at the end of battle"
+      "Heal X at the end of battle",
+      "Heal X at the end of battle"
     ]
   },
   "${modID}:ShinyStar": {
     "NAME": "ShinyStar",
     "DESCRIPTIONS": [
-      "Play an Alice card for free",
-      "Play an Alice card for free"
+      "At the start of each turn, play an Alice card for free.",
+      "At the start of each turn, play an Alice card for free."
     ]
   },
   "${modID}:Flowing": {
@@ -43,8 +57,8 @@
   "${modID}:Witch": {
     "NAME": "Witch",
     "DESCRIPTIONS": [
-      "Every card now cost +1 Mana but Attacks and Skills gains 1 Replay",
-      "Every card now cost +1 Mana but Attacks and Skills gains 1 Replay"
+      "Whenever you play a non-Power card, it costs +1 Mana and is played a second time.",
+      "Whenever you play a non-Power card, it costs +1 Mana and is played a second time."
     ]
   },
   "${modID}:SkillDetection": {

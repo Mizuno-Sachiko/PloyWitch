@@ -43,7 +43,7 @@ public class BreakDown extends BaseCard {
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
 
         if (mana == null || mana.amount < this.magicNumber) {
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
             return false;
         }
 

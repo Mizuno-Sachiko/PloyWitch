@@ -39,4 +39,9 @@ public class SkillDetection extends BasePower {
             addToBot(new RemoveSpecificPowerAction(owner, owner, this));
         }
     }
+
+    @Override
+    public void updateDescription() {
+        this.description = DESCRIPTIONS[0];
+    }
 }

@@ -64,7 +64,7 @@ public class Dee extends BaseCard {
         if (mana == null || mana.amount < this.magicNumber) {
 
             // Message shown when player tries to play card
-            this.cantUseMessage = "Not enough Mana.";
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
 
             return false;
         }

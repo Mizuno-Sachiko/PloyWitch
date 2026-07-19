@@ -1,0 +1,262 @@
+{
+  "${modID}:ExampleCard": {
+    "NAME": "名称",
+    "DESCRIPTION": "描述。 NL 第二行。",
+    "UPGRADE_DESCRIPTION": "升级后自动使用这段描述。不需要时可以移除。",
+    "EXTENDED_DESCRIPTION": [
+      "这里可以放更多文本。",
+      "需要额外描述时使用。",
+      "Blizzard 是一个例子。"
+    ]
+  },
+  "${modID}:Pierce": {
+    "NAME": "贯穿",
+    "DESCRIPTION": "造成 100 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 400 点伤害。"
+  },
+  "${modID}:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。"
+  },
+  "${modID}:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点格挡。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。"
+  },
+  "${modID}:Dee": {
+    "NAME": "啰嗦的双胞胎",
+    "DESCRIPTION": "造成 !D! 点伤害，共 2 次。 NL 花费 3 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，共 2 次。 NL 花费 3 魔力。"
+  },
+  "${modID}:Circuts": {
+    "NAME": "魔术回路",
+    "DESCRIPTION": "获得 2 魔力。",
+    "UPGRADE_DESCRIPTION": "获得 3 魔力。"
+  },
+  "${modID}:DiddleDiddleCard": {
+    "NAME": "夜之飨宴",
+    "DESCRIPTION": "施加 1 层虚弱和 1 层易伤，并获得 1 魔力。 NL 固有。",
+    "UPGRADE_DESCRIPTION": "施加 1 层虚弱和 1 层易伤，并获得 1 魔力。 NL 固有。"
+  },
+  "${modID}:Gandr": {
+    "NAME": "诅咒",
+    "DESCRIPTION": "造成 !D! 点伤害。施加 1 层易伤。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。施加 1 层易伤。 NL 抽 1 张牌。"
+  },
+  "${modID}:BreakDown": {
+    "NAME": "回收",
+    "DESCRIPTION": "每回合开始时，弃掉 1 张牌，然后抽 1 张牌并获得 1 魔力。 NL 花费 5 魔力。",
+    "UPGRADE_DESCRIPTION": "每回合开始时，弃掉 1 张牌，然后抽 1 张牌并获得 1 魔力。 NL 花费 5 魔力。 NL 保留。"
+  },
+  "${modID}:EnchantingEyes": {
+    "NAME": "魔眼",
+    "DESCRIPTION": "施加 1 层虚弱，并抽 1 张牌。",
+    "UPGRADE_DESCRIPTION": "施加 1 层虚弱，并抽 1 张牌。"
+  },
+  "${modID}:ScratchDumpty": {
+    "NAME": "卵之话",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 花费 2 魔力。"
+  },
+  "${modID}:SecondTicket": {
+    "NAME": "午睡之镜",
+    "DESCRIPTION": "对自身造成 2 点伤害。获得 1 层无实体。 NL 消耗。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "对自身造成 2 点伤害。获得 1 层无实体。 NL 消耗。 NL 花费 1 魔力。"
+  },
+  "${modID}:Penguin": {
+    "NAME": "企鹅服",
+    "DESCRIPTION": "施加 1 层虚弱和 -1 力量。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "施加 1 层虚弱和 -1 力量。 NL 花费 2 魔力。 NL 打出 2 次。"
+  },
+  "${modID}:TeaTime": {
+    "NAME": "下午茶",
+    "DESCRIPTION": "战斗结束时回复 7 点生命。 NL 花费 3 魔力。",
+    "UPGRADE_DESCRIPTION": "战斗结束时回复 10 点生命。 NL 花费 3 魔力。"
+  },
+  "${modID}:Surge": {
+    "NAME": "魔力奔涌",
+    "DESCRIPTION": "使当前 魔力 翻倍。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "使当前 魔力 翻倍。 NL 消耗。 NL 抽 1 张牌。"
+  },
+  "${modID}:SixSingingChocolates": {
+    "NAME": "六便士之歌",
+    "DESCRIPTION": "每有 1 点 魔力，回复 2 点生命。 NL 不消耗 魔力。",
+    "UPGRADE_DESCRIPTION": "每有 1 点 魔力，回复 2 点生命，并额外回复 2 点生命。 NL 不消耗 魔力。"
+  },
+  "${modID}:Dice": {
+    "NAME": "骰子",
+    "DESCRIPTION": "随机触发以下效果之一：获得 2 点敏捷，获得 2 点力量， NL 施加 2 层虚弱，施加 2 层易伤， NL 获得 !B! 点格挡，造成 !D! 点伤害。 NL 花费 3 魔力。",
+    "UPGRADE_DESCRIPTION": "随机触发以下效果之一：获得 2 点敏捷，获得 2 点力量， NL 施加 2 层虚弱，施加 2 层易伤， NL 获得 !B! 点格挡，造成 !D! 点伤害。 NL 花费 3 魔力。 NL 打出 2 次。"
+  },
+  "${modID}:Nimble": {
+    "NAME": "灵巧",
+    "DESCRIPTION": "抽 2 张牌。 NL 花费 1 魔力。",
+    "UPGRADE_DESCRIPTION": "抽 2 张牌。"
+  },
+  "${modID}:AokoBlast": {
+    "NAME": "青子的魔炮",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。 NL 花费 2 魔力。"
+  },
+  "${modID}:ShinyStar": {
+    "NAME": "闪耀之星",
+    "DESCRIPTION": "选择任意一张有珠卡牌，每回合开始时免费打出。 NL 保留。 NL 不叠加。",
+    "UPGRADE_DESCRIPTION": "选择任意一张有珠卡牌，每回合开始时免费打出。 NL 保留。 NL 不叠加。"
+  },
+  "${modID}:Shield": {
+    "NAME": "护盾",
+    "DESCRIPTION": "获得 !B! 点格挡。若你有 5 或更多 魔力，抽 1 张牌。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。若你有 5 或更多 魔力，抽 1 张牌。"
+  },
+  "${modID}:Relaxed": {
+    "NAME": "放松",
+    "DESCRIPTION": "本回合获得的 魔力 翻倍。 NL 获得 !B! 点格挡。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "本回合获得的 魔力 翻倍。 NL 获得 !B! 点格挡。 NL 花费 2 魔力。"
+  },
+  "${modID}:Observation": {
+    "NAME": "观察",
+    "DESCRIPTION": "将所有能量转化为 魔力。",
+    "UPGRADE_DESCRIPTION": "将所有能量转化为 魔力。 NL +1 魔力。"
+  },
+  "${modID}:Silverware": {
+    "NAME": "银餐具",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点格挡。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !B! 点格挡。"
+  },
+  "${modID}:BreadMen": {
+    "NAME": "姜饼人",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复 2 点生命。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 回复 5 点生命。"
+  },
+  "${modID}:MagicalCrest": {
+    "NAME": "魔术刻印",
+    "DESCRIPTION": "若 魔力 为 6 或更多，获得 2 点力量。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "若 魔力 为 6 或更多，获得 3 点力量。"
+  },
+  "${modID}:Snarkification": {
+    "NAME": "月之油化",
+    "DESCRIPTION": "造成 !D! 点伤害。若目标已处于虚弱，获得 2 魔力。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。若目标已处于虚弱，获得 2 魔力。 NL 花费 2 魔力。"
+  },
+  "${modID}:Float": {
+    "NAME": "漂浮",
+    "DESCRIPTION": "获得 !B! 点格挡和 1 魔力。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡和 1 魔力。"
+  },
+  "${modID}:Strategy": {
+    "NAME": "策略",
+    "DESCRIPTION": "仅当没有剩余 魔力 和能量时可以打出。造成 !D! 点伤害，获得 !B! 点格挡，获得 3 魔力。 NL 获得 20 金币和 1 点能量。",
+    "UPGRADE_DESCRIPTION": "仅当没有剩余 魔力 和能量时可以打出。造成 !D! 点伤害，获得 !B! 点格挡，获得 4 魔力。 NL 获得 30 金币和 2 点能量。"
+  },
+  "${modID}:Bite": {
+    "NAME": "撕咬",
+    "DESCRIPTION": "造成 !D! 点伤害，获得 1 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，获得 2 魔力。"
+  },
+  "${modID}:Boulder": {
+    "NAME": "巨石",
+    "DESCRIPTION": "获得 !B! 点格挡。 NL 花费 1 魔力。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡。 NL 花费 1 魔力。"
+  },
+  "${modID}:Stab": {
+    "NAME": "刺击",
+    "DESCRIPTION": "造成 !D! 点伤害，施加 1 层虚弱，并获得 1 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害，施加 1 层虚弱，并获得 1 魔力。"
+  },
+  "${modID}:Barrier": {
+    "NAME": "屏障",
+    "DESCRIPTION": "获得 !B! 点格挡，移除自身所有负面状态。 NL 花费 X 魔力。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡，移除自身所有负面状态。 NL 花费 X 魔力。"
+  },
+  "${modID}:Graze": {
+    "NAME": "魔弹",
+    "DESCRIPTION": "造成 7 次 !D! 点伤害。 NL 花费 1 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 10 次 !D! 点伤害。 NL 花费 1 魔力。"
+  },
+  "${modID}:Drawing": {
+    "NAME": "抽牌",
+    "DESCRIPTION": "抽 4 张牌。 NL 花费 2 魔力。",
+    "UPGRADE_DESCRIPTION": "抽 5 张牌。 NL 花费 2 魔力。"
+  },
+  "${modID}:Devour": {
+    "NAME": "吞噬",
+    "DESCRIPTION": "本场战斗每获得过 1 点魔力，造成 !D! 点伤害。（当前累计：!M!） NL 消耗。",
+    "UPGRADE_DESCRIPTION": "本场战斗每获得过 1 点魔力，造成 !D! 点伤害。（当前累计：!M!）"
+  },
+  "${modID}:VoiceOfYumina": {
+    "NAME": "尤米娜之声",
+    "DESCRIPTION": "每回合开始时，获得等同于当前 魔力 一半的力量，向下取整；并对自身施加一次 99 层脆弱。 NL 不叠加。",
+    "UPGRADE_DESCRIPTION": "每回合开始时，获得等同于当前 魔力 一半的力量，向下取整；并对自身施加一次 99 层脆弱。 NL 不叠加。 NL 保留。"
+  },
+  "${modID}:Flowing": {
+    "NAME": "流转",
+    "DESCRIPTION": "每回合开始时，消耗 1 魔力 并抽 2 张牌。 NL 花费 5 魔力。 NL 不叠加。",
+    "UPGRADE_DESCRIPTION": "每回合开始时，消耗 1 魔力 并抽 2 张牌。 NL 花费 4 魔力。 NL 不叠加。"
+  },
+  "${modID}:WitchesBlood": {
+    "NAME": "魔女之血",
+    "DESCRIPTION": "每次击中敌人时，回复 1 点生命。",
+    "UPGRADE_DESCRIPTION": "每次击中敌人时，回复 1 点生命。 NL 保留。"
+  },
+  "${modID}:MoonDrip": {
+    "NAME": "月滴",
+    "DESCRIPTION": "施加 2 层虚弱和 2 层易伤。 NL 消耗。 NL 花费 1 魔力。",
+    "UPGRADE_DESCRIPTION": "施加 3 层虚弱和 3 层易伤。 NL 消耗。 NL 花费 1 魔力。"
+  },
+  "${modID}:Witch": {
+    "NAME": "魔女",
+    "DESCRIPTION": "此后每张牌额外花费 1 魔力，但攻击牌和技能牌获得 1 层 Replay。 NL 花费 3 魔力。",
+    "UPGRADE_DESCRIPTION": "此后每张牌额外花费 1 魔力，但攻击牌和技能牌获得 1 层 Replay。 NL 花费 3 魔力。"
+  },
+  "${modID}:Momentum": {
+    "NAME": "攻势",
+    "DESCRIPTION": "造成 !D! 点伤害。下回合获得 1 点能量。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。下回合获得 1 点能量。"
+  },
+  "${modID}:Break": {
+    "NAME": "击破",
+    "DESCRIPTION": "造成 !D! 点伤害。若本回合未获得 魔力，额外造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。若本回合未获得 魔力，额外造成 !M! 点伤害。"
+  },
+  "${modID}:OffGuard": {
+    "NAME": "破绽",
+    "DESCRIPTION": "造成 !D! 点伤害并抽 1 张牌。若抽到的是技能牌，获得 1 点能量。 NL 花费 1 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害并抽 2 张牌。若抽到的是技能牌，获得 1 点能量。 NL 花费 1 魔力。"
+  },
+  "${modID}:WitchsDomain": {
+    "NAME": "魔女领域",
+    "DESCRIPTION": "造成 !D! 点伤害。目标每有一种负面状态，额外攻击一次。 NL 花费 5 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。目标每有一种负面状态，额外攻击一次。 NL 花费 5 魔力。"
+  },
+  "${modID}:SweetsHearts": {
+    "NAME": "许愿之蛋",
+    "DESCRIPTION": "从你的牌组中选择 1 张牌，生成一张它的复制。 NL 花费 3 魔力。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "从你的牌组中选择 1 张牌，生成一张它的复制。 NL 花费 3 魔力。"
+  },
+  "${modID}:Wandersnatch": {
+    "NAME": "蔷薇猎犬",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害。每击杀一名敌人，获得 2 魔力 和 6 点生命。 NL 花费 4 魔力。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "对所有敌人造成 !D! 点伤害。每击杀一名敌人，获得 3 魔力 和 8 点生命。 NL 花费 4 魔力。 NL 消耗。"
+  },
+  "${modID}:FlatSnark": {
+    "NAME": "月之油",
+    "DESCRIPTION": "造成 !D! 点伤害。施加 2 层虚弱。若敌人生命低于 50%，造成 2 倍伤害。 NL 花费 6 魔力。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。施加 3 层虚弱。若敌人生命低于 50%，造成 2 倍伤害。 NL 花费 6 魔力。 NL 消耗。"
+  },
+  "${modID}:ThamesTroll": {
+    "NAME": "桥之巨人",
+    "DESCRIPTION": "获得 !B! 点格挡、10 层多重护甲和 2 点敏捷。 NL 花费 8 魔力。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点格挡、10 层多重护甲和 2 点敏捷。 NL 花费 8 魔力。 NL 消耗。"
+  },
+  "${modID}:TheGreatThree": {
+    "NAME": "童话怪物",
+    "DESCRIPTION": "从童话怪物中选择一张加入手牌。",
+    "UPGRADE_DESCRIPTION": "从升级后的童话怪物中选择一张加入手牌。"
+  },
+  "${modID}:SnarkInABottle": {
+    "NAME": "瓶中的月之油",
+    "DESCRIPTION": "召唤月之油。对自身造成 8 点伤害。 NL 消耗。",
+    "UPGRADE_DESCRIPTION": "召唤月之油。对自身造成 8 点伤害。 NL 消耗。"
+  }
+}

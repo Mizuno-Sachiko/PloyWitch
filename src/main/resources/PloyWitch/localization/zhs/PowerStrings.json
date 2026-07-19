@@ -1,0 +1,71 @@
+{
+  "${modID}:PowerID": {
+    "NAME": "终极力量",
+    "DESCRIPTIONS": [
+      "你非常厉害，也非常强大。"
+    ]
+  },
+  "${modID}:ManaPower": {
+    "NAME": "魔力",
+    "DESCRIPTIONS": [
+      "你有",
+      "点魔力。（上限",
+      "）"
+    ]
+  },
+  "${modID}:Voice": {
+    "NAME": "尤米娜之声",
+    "DESCRIPTIONS": [
+      "每回合开始时，获得等同于当前魔力一半的力量。对自身施加 99 层脆弱。"
+    ]
+  },
+  "${modID}:BreakDown": {
+    "NAME": "回收",
+    "DESCRIPTIONS": [
+      "每回合开始时，选择 1 张手牌洗入抽牌堆，获得 1 魔力并抽 1 张牌。",
+      "每回合开始时，选择 1 张手牌洗入抽牌堆，获得 1 魔力并抽 1 张牌。"
+    ]
+  },
+  "${modID}:TeaTime": {
+    "NAME": "下午茶",
+    "DESCRIPTIONS": [
+      "战斗结束时回复 X 点生命。",
+      "战斗结束时回复 X 点生命。"
+    ]
+  },
+  "${modID}:ShinyStar": {
+    "NAME": "闪耀之星",
+    "DESCRIPTIONS": [
+      "每回合开始时，免费打出一张有珠卡牌。",
+      "每回合开始时，免费打出一张有珠卡牌。"
+    ]
+  },
+  "${modID}:Flowing": {
+    "NAME": "流转",
+    "DESCRIPTIONS": [
+      "每回合开始时，消耗 1 魔力 并抽 2 张牌。",
+      "每回合开始时，消耗 1 魔力 并抽 2 张牌。"
+    ]
+  },
+  "${modID}:WitchesBlood": {
+    "NAME": "魔女之血",
+    "DESCRIPTIONS": [
+      "每次击中回复 1 点生命。",
+      "每次击中回复 1 点生命。"
+    ]
+  },
+  "${modID}:Witch": {
+    "NAME": "魔女",
+    "DESCRIPTIONS": [
+      "每当你打出一张非能力牌时，额外花费 1 魔力并再次打出。",
+      "每当你打出一张非能力牌时，额外花费 1 魔力并再次打出。"
+    ]
+  },
+  "${modID}:SkillDetection": {
+    "NAME": "技能检测",
+    "DESCRIPTIONS": [
+      "若抽到的牌是技能牌，获得能量。",
+      "若抽到的牌是技能牌，获得能量。"
+    ]
+  }
+}

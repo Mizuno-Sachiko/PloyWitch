@@ -36,7 +36,6 @@ public class FlowingPower extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description =
-                "At the start of your turn, consume 1 Mana and draw 2 cards";
+        this.description = DESCRIPTIONS[0];
     }
 }

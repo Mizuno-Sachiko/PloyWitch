@@ -34,7 +34,6 @@ public class WitchBlood extends BasePower {
 
     @Override
     public void updateDescription() {
-        this.description =
-                "Heal 1 Hp per hit";
+        this.description = DESCRIPTIONS[0];
     }
 }

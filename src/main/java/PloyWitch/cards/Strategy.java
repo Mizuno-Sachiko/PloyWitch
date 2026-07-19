@@ -8,6 +8,7 @@ import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.ui.panels.EnergyPanel;
@@ -49,7 +50,7 @@ public class Strategy extends BaseCard {
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
 
         if ((mana != null && mana.amount > 0) || EnergyPanel.totalCount > 0) {
-            this.cantUseMessage = "Can't play this card!";
+            this.cantUseMessage = CardCrawlGame.languagePack.getUIString(ID).TEXT[0];
             return false;
         }
         return true;

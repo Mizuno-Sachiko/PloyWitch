@@ -35,7 +35,7 @@ public class WitchPower extends BasePower {
         ManaPower mana = (ManaPower) owner.getPower(ManaPower.POWER_ID);
         if (mana == null) return;
 
-        mana.spendMana(1);
+        if (!mana.spendMana(1)) return;
 
         AbstractMonster m = AbstractDungeon.getMonsters()
                 .getRandomMonster(null, true, AbstractDungeon.cardRandomRng);

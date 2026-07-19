@@ -36,6 +36,7 @@ public class Observation extends BaseCard {
         if (!upgraded) {
             upgradeName();
             bonus += UPG_BONUS;
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

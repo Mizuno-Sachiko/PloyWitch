@@ -70,6 +70,8 @@ public class TheGreatThree extends BaseCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
+            initializeDescription();
         }
     }
 }

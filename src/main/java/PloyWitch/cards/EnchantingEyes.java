@@ -51,6 +51,7 @@ public class EnchantingEyes extends BaseCard {
 
             upgradeMagicNumber(UPG_WEAK - WEAK);
 
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

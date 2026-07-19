@@ -46,13 +46,13 @@
   },
   "${modID}:BreakDown": {
     "NAME": "BreakDown",
-    "DESCRIPTION": "At the start of your turn discard a card then Draw 1, gain 1 Mana. NL Cost 5 Mana",
-    "UPGRADE_DESCRIPTION": "At the start of your turn discard a card then Draw 1, gain 1 Mana. NL Cost 5 Mana. NL Retain"
+    "DESCRIPTION": "At the start of your turn, choose 1 card from your hand to shuffle into your draw pile, then gain 1 Mana and draw 1 card. NL Cost 5 Mana",
+    "UPGRADE_DESCRIPTION": "At the start of your turn, choose 1 card from your hand to shuffle into your draw pile, then gain 1 Mana and draw 1 card. NL Cost 5 Mana. NL Retain"
   },
   "${modID}:EnchantingEyes": {
     "NAME": "EnchantingEyes",
     "DESCRIPTION": "Apply 1 weak and draw 1 card",
-    "UPGRADE_DESCRIPTION": "Apply 1 weak and draw 1 card"
+    "UPGRADE_DESCRIPTION": "Apply 2 weak and draw 1 card"
   },
   "${modID}:ScratchDumpty": {
     "NAME": "ScratchDumpty",
@@ -111,7 +111,7 @@
   },
   "${modID}:Relaxed": {
     "NAME": "Relaxed",
-    "DESCRIPTION": "Double MP gained for one turn. NL Gain !B! Block NL Cost 2 Mana",
+    "DESCRIPTION": "Double MP gained for one turn. NL Gain !B! Block. NL Cost 2 Mana",
     "UPGRADE_DESCRIPTION": "Double MP gained for one turn. NL Gain !B! Block. NL Cost 2 Mana"
   },
   "${modID}:Observation": {
@@ -126,8 +126,8 @@
   },
   "${modID}:BreadMen": {
     "NAME": "BreadMen",
-    "DESCRIPTION": "Deal !D! Damage. NL Heal 2 HP",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Heal 5 HP"
+    "DESCRIPTION": "Deal !D! Damage. NL Heal 2 HP. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. NL Heal 5 HP. NL Cost 1 Mana"
   },
   "${modID}:MagicalCrest": {
     "NAME": "MagicalCrest",
@@ -137,7 +137,7 @@
   "${modID}:Snarkification": {
     "NAME": "Snarkification",
     "DESCRIPTION": "Deal !D! damage, if target is weakened Gain 2 Mana. NL Cost 2 Mana",
-    "UPGRADE_DESCRIPTION": "Deal !D! damage, if target is weakened Gain 2 Mana. NL Cost 2 Mana"
+    "UPGRADE_DESCRIPTION": "Deal !D! damage, if target is weakened Gain 3 Mana. NL Cost 2 Mana"
   },
   "${modID}:Float": {
     "NAME": "Float",

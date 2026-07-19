@@ -101,6 +101,7 @@ public class FlatSnark extends BaseCard {
             upgradeName();
             upgradeDamage(UPG_DAMAGE);
             upgradeMagicNumber(UPG_WEAK);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

@@ -11,7 +11,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Drawing extends BaseCard {
 
     public static final String ID = makeID("Drawing");
-    private int MANA_COST = 1;
+    private static final int MANA_COST = 2;
 
     private static final CardStats info = new CardStats(
             Alice.Meta.CARD_COLOR,
@@ -57,6 +57,7 @@ public class Drawing extends BaseCard {
         if (!upgraded) {
             upgradeName();
             upgradeMagicNumber(1);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

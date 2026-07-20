@@ -46,13 +46,13 @@
   },
   "${modID}:BreakDown": {
     "NAME": "回收",
-    "DESCRIPTION": "每回合开始时，弃掉 1 张牌，然后抽 1 张牌并获得 1 魔力。 NL 花费 5 魔力。",
-    "UPGRADE_DESCRIPTION": "每回合开始时，弃掉 1 张牌，然后抽 1 张牌并获得 1 魔力。 NL 花费 5 魔力。 NL 保留。"
+    "DESCRIPTION": "每回合开始时，选择 1 张手牌洗入抽牌堆，获得 1 魔力并抽 1 张牌。 NL 花费 5 魔力。",
+    "UPGRADE_DESCRIPTION": "每回合开始时，选择 1 张手牌洗入抽牌堆，获得 1 魔力并抽 1 张牌。 NL 花费 5 魔力。 NL 保留。"
   },
   "${modID}:EnchantingEyes": {
     "NAME": "魔眼",
     "DESCRIPTION": "施加 1 层虚弱，并抽 1 张牌。",
-    "UPGRADE_DESCRIPTION": "施加 1 层虚弱，并抽 1 张牌。"
+    "UPGRADE_DESCRIPTION": "施加 2 层虚弱，并抽 1 张牌。"
   },
   "${modID}:ScratchDumpty": {
     "NAME": "卵之话",
@@ -126,8 +126,8 @@
   },
   "${modID}:BreadMen": {
     "NAME": "姜饼人",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复 2 点生命。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 回复 5 点生命。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 回复 2 点生命。 NL 花费 1 魔力。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 回复 5 点生命。 NL 花费 1 魔力。"
   },
   "${modID}:MagicalCrest": {
     "NAME": "魔术刻印",
@@ -137,7 +137,7 @@
   "${modID}:Snarkification": {
     "NAME": "月之油化",
     "DESCRIPTION": "造成 !D! 点伤害。若目标已处于虚弱，获得 2 魔力。 NL 花费 2 魔力。",
-    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。若目标已处于虚弱，获得 2 魔力。 NL 花费 2 魔力。"
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。若目标已处于虚弱，获得 3 魔力。 NL 花费 2 魔力。"
   },
   "${modID}:Float": {
     "NAME": "漂浮",

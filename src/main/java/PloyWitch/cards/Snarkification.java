@@ -71,7 +71,7 @@ public class Snarkification extends BaseCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPG_MANA_GAIN);
+            upgradeMagicNumber(UPG_MANA_GAIN - MANA_GAIN);
             upgradeDamage(UPG_DAMAGE);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();

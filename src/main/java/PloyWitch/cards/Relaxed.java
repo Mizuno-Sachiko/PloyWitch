@@ -80,6 +80,7 @@ public class Relaxed extends BaseCard {
         if (!upgraded) {
             upgradeName();
             upgradeBlock(UPG_BLOCK);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

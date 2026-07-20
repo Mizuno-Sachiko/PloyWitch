@@ -101,7 +101,7 @@ public class WanderSnatch extends BaseCard {
                                 upgraded ? (HEAL + UPG_HEAL) : HEAL
                         ));
 
-                        addToTop(new GainMana(MANA_GAIN));
+                        addToTop(new GainMana(upgraded ? (MANA_GAIN + UPG_MANA_GAIN) : MANA_GAIN));
                     }
                 }
 
@@ -115,6 +115,7 @@ public class WanderSnatch extends BaseCard {
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPG_DAMAGE);
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

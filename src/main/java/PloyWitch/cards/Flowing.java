@@ -11,7 +11,8 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 public class Flowing extends BaseCard {
 
     public static final String ID = makeID("Flowing");
-    private int MANA_COST = 5;
+    private static final int MANA_COST = 5;
+    private static final int UPG_MANA_COST = 4;
     private static final CardStats info = new CardStats(
             Alice.Meta.CARD_COLOR,
             CardType.POWER,
@@ -22,7 +23,7 @@ public class Flowing extends BaseCard {
 
     public Flowing() {
         super(ID, info);
-        this.baseMagicNumber = this.magicNumber = 5;
+        this.baseMagicNumber = this.magicNumber = MANA_COST;
     }
 
     @Override
@@ -33,7 +34,7 @@ public class Flowing extends BaseCard {
 
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
 
-        if (mana == null || mana.amount < MANA_COST) {
+        if (mana == null || mana.amount < this.magicNumber) {
             this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
             return false;
         }
@@ -45,9 +46,7 @@ public class Flowing extends BaseCard {
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
-        if (mana != null) {
-            mana.spendMana(this.magicNumber);
-        }
+        if (mana == null || !mana.spendMana(this.magicNumber)) return;
 
         // Apply power
         addToBot(new ApplyPowerAction(
@@ -62,7 +61,7 @@ public class Flowing extends BaseCard {
     public void upgrade() {
         if (!upgraded) {
             upgradeName();
-            MANA_COST = 4;
+            upgradeMagicNumber(UPG_MANA_COST - MANA_COST);
             this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }

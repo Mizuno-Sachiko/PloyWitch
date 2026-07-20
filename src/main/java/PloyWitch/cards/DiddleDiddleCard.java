@@ -73,6 +73,7 @@ public class DiddleDiddleCard extends BaseCard {
             // cost 2 → 1
             upgradeBaseCost(1);
 
+            this.rawDescription = cardStrings.UPGRADE_DESCRIPTION;
             initializeDescription();
         }
     }

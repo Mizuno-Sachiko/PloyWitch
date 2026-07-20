@@ -42,12 +42,23 @@ public class OffGuard extends BaseCard {
     }
 
     @Override
+    public boolean canUse(AbstractPlayer p, AbstractMonster m) {
+        if (!super.canUse(p, m)) return false;
+
+        ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
+        if (mana == null || mana.amount < MANA_COST) {
+            this.cantUseMessage = ManaPower.getNotEnoughManaMessage();
+            return false;
+        }
+
+        return true;
+    }
+
+    @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
-        if (mana != null) {
-            mana.spendMana(MANA_COST);
-        }
+        if (mana == null || !mana.spendMana(MANA_COST)) return;
 
         addToBot(new DamageAction(
                 m,

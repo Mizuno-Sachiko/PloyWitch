@@ -32,6 +32,8 @@ public class Strategy extends BaseCard {
     private static final int UPG_BLOCK = 5;
     private static final int MANA_GAIN = 3;
     private static final int UPG_MANA_GAIN = 4;
+    private static final int ENERGY_GAIN = 1;
+    private static final int UPG_ENERGY_GAIN = 2;
     private boolean goldUp = false;
 
 
@@ -67,7 +69,7 @@ public class Strategy extends BaseCard {
             addToBot(new GainGoldAction(20));
         }
         addToBot(new GainMana(this.magicNumber));
-        addToBot(new GainEnergyAction(1));
+        addToBot(new GainEnergyAction(upgraded ? UPG_ENERGY_GAIN : ENERGY_GAIN));
     }
 
     public void upgrade() {

@@ -48,13 +48,13 @@ public class Flowing extends BaseCard {
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
         if (mana == null || !mana.spendMana(this.magicNumber)) return;
 
-        // Apply power
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new FlowingPower(p, 1),
-                1
-        ));
+        if (!p.hasPower(FlowingPower.POWER_ID)) {
+            addToBot(new ApplyPowerAction(
+                    p,
+                    p,
+                    new FlowingPower(p)
+            ));
+        }
     }
 
     @Override

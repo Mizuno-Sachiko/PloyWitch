@@ -4,12 +4,11 @@ import PloyWitch.character.Alice;
 import PloyWitch.powers.ManaPower;
 import PloyWitch.util.CardStats;
 
-import java.util.Random;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.*;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
+import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.*;
 
@@ -30,8 +29,8 @@ public class Dice extends BaseCard {
     public Dice() {
         super(ID, info);
         this.exhaust = true;
-        this.baseDamage = 14;
-        this.baseBlock = 13;
+        setDamage(14);
+        setBlock(13);
     }
 
     @Override
@@ -59,13 +58,11 @@ public class Dice extends BaseCard {
             mana.spendMana(MANA_COST);
         }
 
-        Random rng = new Random();
-
         int times = upgraded ? 2 : 1;
 
         for (int i = 0; i < times; i++) {
 
-            int roll = rng.nextInt(6); // 0–5
+            int roll = AbstractDungeon.cardRandomRng.random(5); // 0–5
 
             switch (roll) {
 
@@ -102,13 +99,13 @@ public class Dice extends BaseCard {
                     break;
 
                 case 4:
-                    addToBot(new GainBlockAction(p, p, 13));
+                    addToBot(new GainBlockAction(p, p, this.block));
                     break;
 
                 case 5:
                     addToBot(new DamageAction(
                             m,
-                            new DamageInfo(p, 14),
+                            new DamageInfo(p, this.damage, DamageInfo.DamageType.NORMAL),
                             AbstractGameAction.AttackEffect.SLASH_DIAGONAL
                     ));
                     break;

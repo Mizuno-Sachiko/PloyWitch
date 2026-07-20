@@ -53,19 +53,16 @@ public class BreakDown extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        // Spend Mana first
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
-        if (mana != null) {
-            mana.spendMana(this.magicNumber);
-        }
+        if (mana == null || !mana.spendMana(this.magicNumber)) return;
 
-        // Apply power
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new BreakDownPower(p, 1),
-                1
-        ));
+        if (!p.hasPower(BreakDownPower.POWER_ID)) {
+            addToBot(new ApplyPowerAction(
+                    p,
+                    p,
+                    new BreakDownPower(p)
+            ));
+        }
     }
 
     @Override

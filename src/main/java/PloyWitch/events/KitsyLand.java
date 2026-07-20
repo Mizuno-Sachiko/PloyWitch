@@ -10,6 +10,10 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.EventStrings;
 import com.megacrit.cardcrawl.vfx.RainingGoldEffect;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Random;
+
 import static PloyWitch.BasicMod.makeID;
 
 public class KitsyLand extends PhasedEvent {
@@ -66,28 +70,36 @@ public class KitsyLand extends PhasedEvent {
                         new TextPhase.OptionInfo(OPTIONS[2])
                                 .setOptionResult(i -> {
 
-                                    int upgraded = 0;
+                                    ArrayList<AbstractCard> upgradeableCards = new ArrayList<>();
 
                                     for (AbstractCard c : AbstractDungeon.player.masterDeck.group) {
-
                                         if (c != null && c.canUpgrade()) {
-
-                                            c.upgrade();
-                                            c.superFlash();
-                                            c.flash();
-
-                                            AbstractDungeon.effectList.add(
-                                                    new com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect(
-                                                            c.makeStatEquivalentCopy()
-                                                    )
-
-                                            );
-                                            CardCrawlGame.sound.play("CARD_UPGRADE");
-                                            CardCrawlGame.sound.play("CARD_UPGRADE");
-                                            upgraded++;
-
-                                            if (upgraded >= 2) break;
+                                            upgradeableCards.add(c);
                                         }
+                                    }
+
+                                    Collections.shuffle(
+                                            upgradeableCards,
+                                            new Random(AbstractDungeon.miscRng.randomLong())
+                                    );
+
+                                    int upgradeCount = Math.min(2, upgradeableCards.size());
+
+                                    for (int j = 0; j < upgradeCount; j++) {
+                                        AbstractCard c = upgradeableCards.get(j);
+
+                                        c.upgrade();
+                                        AbstractDungeon.player.bottledCardUpgradeCheck(c);
+                                        c.superFlash();
+                                        c.flash();
+
+                                        AbstractDungeon.effectList.add(
+                                                new com.megacrit.cardcrawl.vfx.cardManip.ShowCardBrieflyEffect(
+                                                        c.makeStatEquivalentCopy()
+                                                )
+                                        );
+                                        CardCrawlGame.sound.play("CARD_UPGRADE");
+                                        CardCrawlGame.sound.play("CARD_UPGRADE");
                                     }
 
                                     AbstractDungeon.player.masterDeck.refreshHandLayout();

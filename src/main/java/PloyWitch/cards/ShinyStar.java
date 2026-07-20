@@ -31,13 +31,13 @@ public class ShinyStar extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new ShinyStarPower(p, 1),
-                1
-        ));
+        if (!p.hasPower(ShinyStarPower.POWER_ID)) {
+            addToBot(new ApplyPowerAction(
+                    p,
+                    p,
+                    new ShinyStarPower(p)
+            ));
+        }
     }
 
     @Override

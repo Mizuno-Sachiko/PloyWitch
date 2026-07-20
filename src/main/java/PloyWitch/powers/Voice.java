@@ -17,13 +17,13 @@ public class Voice extends AbstractPower {
     private boolean appliedFrail = false;
     private final String[] DESCRIPTIONS;
 
-    public Voice(AbstractCreature owner, int amount) {
+    public Voice(AbstractCreature owner) {
         this.ID = POWER_ID;
         PowerStrings powerStrings = CardCrawlGame.languagePack.getPowerStrings(POWER_ID);
         this.name = powerStrings.NAME;
         this.DESCRIPTIONS = powerStrings.DESCRIPTIONS;
         this.owner = owner;
-        this.amount = amount;
+        this.amount = -1;
 
         this.type = PowerType.BUFF;
         this.isTurnBased = false;

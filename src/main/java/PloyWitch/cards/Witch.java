@@ -52,21 +52,16 @@ public class Witch extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
+        if (mana == null || !mana.spendMana(this.magicNumber)) return;
 
-
-        if (mana != null) {
-
-            mana.spendMana(this.magicNumber);
+        if (!p.hasPower(WitchPower.POWER_ID)) {
+            addToBot(new ApplyPowerAction(
+                    p,
+                    p,
+                    new WitchPower(p)
+            ));
         }
-
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new WitchPower(p, 1),
-                1
-        ));
     }
 
     @Override

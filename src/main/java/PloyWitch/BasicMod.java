@@ -4,9 +4,11 @@ import PloyWitch.events.BlueGarden;
 import PloyWitch.events.KitsyLand;
 import PloyWitch.events.PloyShop;
 import PloyWitch.events.ShinyStarEvent;
+import PloyWitch.powers.ManaPower;
 import PloyWitch.relics.BaseRelic;
 import PloyWitch.util.*;
 import basemod.BaseMod;
+import basemod.eventUtil.AddEventParams;
 import com.badlogic.gdx.graphics.Texture;
 import PloyWitch.cards.BaseCard;
 import basemod.AutoAdd;
@@ -24,6 +26,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -42,7 +45,8 @@ public class BasicMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         AddAudioSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        OnStartBattleSubscriber {
 
     @Override
     public void receiveEditCards() { //somewhere in the class
@@ -77,6 +81,11 @@ public class BasicMod implements
     }
 
     @Override
+    public void receiveOnBattleStart(AbstractRoom room) {
+        ManaPower.resetManaTracking();
+    }
+
+    @Override
     public void receivePostInitialize() {
         //This loads the image used as an icon in the in-game mods menu.
         AliceCardLoader.load();
@@ -90,10 +99,26 @@ public class BasicMod implements
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
 
         //Events
-        BaseMod.addEvent(PloyShop.ID, PloyShop.class);
-        BaseMod.addEvent(KitsyLand.ID, KitsyLand.class);
-        BaseMod.addEvent(BlueGarden.ID, BlueGarden.class);
-        BaseMod.addEvent(ShinyStarEvent.ID, ShinyStarEvent.class);
+        BaseMod.addEvent(
+                new AddEventParams.Builder(PloyShop.ID, PloyShop.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
+        BaseMod.addEvent(
+                new AddEventParams.Builder(KitsyLand.ID, KitsyLand.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
+        BaseMod.addEvent(
+                new AddEventParams.Builder(BlueGarden.ID, BlueGarden.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
+        BaseMod.addEvent(
+                new AddEventParams.Builder(ShinyStarEvent.ID, ShinyStarEvent.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
 
     }
 

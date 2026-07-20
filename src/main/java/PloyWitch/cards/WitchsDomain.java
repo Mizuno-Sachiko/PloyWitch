@@ -89,8 +89,6 @@ public class WitchsDomain extends BaseCard {
             }
         }
 
-        hits = Math.min(hits, 3);
-
         for (int j = 0; j < hits; j++) {
 
             addToBot(new DamageAction(

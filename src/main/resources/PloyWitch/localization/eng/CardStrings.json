@@ -146,8 +146,8 @@
   },
   "${modID}:Strategy": {
     "NAME": "Strategy",
-    "DESCRIPTION": "only playable if no Mana and Energy remain. Deal !D! Damage, Gain !B! Block, Gain 3 Mana. NL Gain 20 gold and Gain 1 Energy.",
-    "UPGRADE_DESCRIPTION": "only playable if no Mana and Energy remain. Deal !D! Damage, Gain !B! Block, Gain 4 Mana. NL Gain 30 gold and Gain 2 Energy."
+    "DESCRIPTION": "only playable if no Mana and Energy remain. Deal !D! Damage to ALL enemies, Gain !B! Block, Gain 3 Mana. NL Gain 20 gold and Gain 1 Energy.",
+    "UPGRADE_DESCRIPTION": "only playable if no Mana and Energy remain. Deal !D! Damage to ALL enemies, Gain !B! Block, Gain 4 Mana. NL Gain 30 gold and Gain 2 Energy."
   },
   "${modID}:Bite": {
     "NAME": "Bite",

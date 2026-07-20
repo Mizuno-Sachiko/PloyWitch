@@ -16,8 +16,6 @@ public class Relaxed extends BaseCard {
 
     private static final int MANA_COST = 2;
 
-    public static boolean active = false;
-
     private static final CardStats info = new CardStats(
             Alice.Meta.CARD_COLOR,
             CardType.SKILL,
@@ -57,23 +55,18 @@ public class Relaxed extends BaseCard {
 
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
 
-        if (mana != null) {
-            mana.spendMana(MANA_COST);
+        if (mana == null || !mana.spendMana(MANA_COST)) {
+            return;
         }
 
         addToBot(new GainBlockAction(p, p, this.block));
 
-        active = true;
+        mana.enableManaGainDoubling();
 
         AbstractDungeon.effectList.add(
                 new PowerBuffEffect(p.hb.cX, p.hb.cY, CardCrawlGame.languagePack.getUIString(ID).TEXT[0])
         );
 
-    }
-
-    @Override
-    public void atTurnStart() {
-        active = false;
     }
     @Override
     public void upgrade() {

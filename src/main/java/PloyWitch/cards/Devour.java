@@ -40,7 +40,7 @@ public class Devour extends BaseCard {
 
         int manaCount = ManaPower.manaGeneratedThisCombat;
 
-        int totalDamage = manaCount * 3;
+        int totalDamage = manaCount * this.damage;
 
         addToBot(new DamageAction(
                 m,

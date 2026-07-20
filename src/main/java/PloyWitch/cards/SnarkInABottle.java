@@ -46,10 +46,6 @@ public class SnarkInABottle extends BaseCard {
                 new DamageInfo(p, 8, DamageInfo.DamageType.THORNS)
         ));
 
-        AbstractDungeon.player.masterDeck.removeCard(this);
-
-
-
     }
     @Override
     public boolean canUpgrade() {

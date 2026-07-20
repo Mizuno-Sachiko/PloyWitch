@@ -20,6 +20,7 @@ public class ManaPower extends AbstractPower {
     public static int manaGeneratedThisTurn = 0;
 
     private final String[] DESCRIPTIONS;
+    private boolean manaGainDoubledThisTurn = false;
 
     public ManaPower(AbstractCreature owner, int amount) {
         this.ID = POWER_ID;
@@ -36,6 +37,14 @@ public class ManaPower extends AbstractPower {
 
     public static String getNotEnoughManaMessage() {
         return CardCrawlGame.languagePack.getUIString(POWER_ID).TEXT[0];
+    }
+
+    public void enableManaGainDoubling() {
+        this.manaGainDoubledThisTurn = true;
+    }
+
+    public boolean isManaGainDoubled() {
+        return this.manaGainDoubledThisTurn;
     }
 
     @Override
@@ -75,6 +84,11 @@ public class ManaPower extends AbstractPower {
         }
 
         return false;
+    }
+
+    @Override
+    public void atStartOfTurn() {
+        this.manaGainDoubledThisTurn = false;
     }
 
     //Used Mainly For "Devour"

@@ -1,7 +1,5 @@
 package PloyWitch.powers;
 
-import PloyWitch.cards.Relaxed;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
@@ -19,7 +17,9 @@ public class GainMana extends AbstractGameAction {
 
         int gain = amount;
 
-        if (Relaxed.active) {
+        ManaPower mana = (ManaPower) AbstractDungeon.player.getPower(ManaPower.POWER_ID);
+
+        if (mana != null && mana.isManaGainDoubled()) {
             gain *= 2;
         }
 

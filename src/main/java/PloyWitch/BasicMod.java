@@ -7,6 +7,7 @@ import PloyWitch.events.ShinyStarEvent;
 import PloyWitch.relics.BaseRelic;
 import PloyWitch.util.*;
 import basemod.BaseMod;
+import basemod.eventUtil.AddEventParams;
 import com.badlogic.gdx.graphics.Texture;
 import PloyWitch.cards.BaseCard;
 import basemod.AutoAdd;
@@ -90,10 +91,26 @@ public class BasicMod implements
         BaseMod.registerModBadge(badgeTexture, info.Name, GeneralUtils.arrToString(info.Authors), info.Description, null);
 
         //Events
-        BaseMod.addEvent(PloyShop.ID, PloyShop.class);
-        BaseMod.addEvent(KitsyLand.ID, KitsyLand.class);
-        BaseMod.addEvent(BlueGarden.ID, BlueGarden.class);
-        BaseMod.addEvent(ShinyStarEvent.ID, ShinyStarEvent.class);
+        BaseMod.addEvent(
+                new AddEventParams.Builder(PloyShop.ID, PloyShop.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
+        BaseMod.addEvent(
+                new AddEventParams.Builder(KitsyLand.ID, KitsyLand.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
+        BaseMod.addEvent(
+                new AddEventParams.Builder(BlueGarden.ID, BlueGarden.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
+        BaseMod.addEvent(
+                new AddEventParams.Builder(ShinyStarEvent.ID, ShinyStarEvent.class)
+                        .playerClass(Alice.Meta.Witch)
+                        .create()
+        );
 
     }
 

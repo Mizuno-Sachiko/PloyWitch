@@ -1,4 +1,4 @@
-A lone Witch wanders into the Spire, aiming for the heartâ€”and perhaps a new Ploy!
+A lone Witch wanders into the Spire, aiming for the heart and perhaps a new Ploy!
 
 The Witch (Alice) relies on Ploys in combat to do the heavy lifting, but they come at a cost: her Mana.
 

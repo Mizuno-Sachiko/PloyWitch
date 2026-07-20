@@ -22,14 +22,7 @@ public class FlowingPower extends BasePower {
 
         ManaPower mana = (ManaPower) owner.getPower(ManaPower.POWER_ID);
 
-        // Check if player has mana
-        if (mana != null && mana.amount >= 1) {
-
-            // Consume 1 mana
-            mana.amount -= 1;
-            mana.updateDescription();
-
-            // Draw 2 cards
+        if (mana != null && mana.spendMana(1)) {
             addToBot(new DrawCardAction(owner, 2));
         }
     }

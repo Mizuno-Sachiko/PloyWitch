@@ -1,5 +1,6 @@
 package PloyWitch.cards;
 
+import PloyWitch.character.Alice;
 import PloyWitch.powers.ManaPower;
 import PloyWitch.util.CardStats;
 
@@ -18,7 +19,7 @@ public class Penguin extends BaseCard {
 
 
     private static final CardStats info = new CardStats(
-            CardColor.GREEN,
+            Alice.Meta.CARD_COLOR,
             CardType.SKILL,
             CardRarity.RARE,
             CardTarget.ENEMY,

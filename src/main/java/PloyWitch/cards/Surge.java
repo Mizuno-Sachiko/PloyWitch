@@ -1,6 +1,7 @@
 package PloyWitch.cards;
 
 import PloyWitch.character.Alice;
+import PloyWitch.powers.GainMana;
 import PloyWitch.powers.ManaPower;
 import PloyWitch.util.CardStats;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -34,8 +35,7 @@ public class Surge extends BaseCard {
 
             int currentMana = mana.amount;
 
-            // Double current mana
-            mana.stackPower(currentMana);
+            addToBot(new GainMana(currentMana));
         }
 
         if (this.upgraded) {

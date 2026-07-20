@@ -66,8 +66,8 @@
   },
   "${modID}:Penguin": {
     "NAME": "Penguin",
-    "DESCRIPTION": "Apply 1 weak and -1 strength. NL Cost 2 Mana",
-    "UPGRADE_DESCRIPTION": "Apply 1 weak and -1 strength. NL Cost 2 mana. NL Plays twice"
+    "DESCRIPTION": "Enemy loses 1 Strength. Apply 1 Weak. NL Cost 2 Mana",
+    "UPGRADE_DESCRIPTION": "Enemy loses 2 Strength. Apply 2 Weak. NL Cost 2 Mana"
   },
   "${modID}:TeaTime": {
     "NAME": "TeaTime",
@@ -81,13 +81,13 @@
   },
   "${modID}:SixSingingChocolates": {
     "NAME": "SixSingingChocolates",
-    "DESCRIPTION": "Heal 2 HP X times mana count. NL does not consume mana. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Heal 2 HP X+2 times mana count. NL does not consume mana. NL Exhaust"
+    "DESCRIPTION": "Heal 2 HP for each Mana you have. NL Does not consume Mana. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Heal 2 HP for each Mana you have, plus 2 additional HP. NL Does not consume Mana. NL Exhaust"
   },
   "${modID}:Dice": {
     "NAME": "Dice",
     "DESCRIPTION": "Random chance to Gain 2 Dexterity. Gain 2 Strength. NL Apply 2 Weaken. Apply 2 Vulnerable. NL Gain !B! shield. deal !D! Damage. NL Cost 3 Mana. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Random chance to Gain 2 Dexterity. Gain 2 Strength. NL Apply 2 Weaken. Apply 2 Vulnerable. NL Gain !B! shield. Deal !D! Damage. NL Cost 3 Mana. NL Trigger a random effect twice. NL Exhaust"
+    "UPGRADE_DESCRIPTION": "Random chance to Gain 2 Dexterity. Gain 2 Strength. NL Apply 2 Weaken. Apply 2 Vulnerable. NL Gain !B! shield. Deal !D! Damage. NL Cost 3 Mana. NL Trigger twice. NL Exhaust"
   },
   "${modID}:Nimble": {
     "NAME": "Nimble",
@@ -181,8 +181,8 @@
   },
   "${modID}:Devour": {
     "NAME": "Devour",
-    "DESCRIPTION": "Deal !D! Damage for each mana generated this combat. (Currently !M!) NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage for each mana generated this combat. (Currently !M!)"
+    "DESCRIPTION": "Deal damage equal to !D! times the total Mana gained this combat. (Currently !M!) NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal damage equal to !D! times the total Mana gained this combat. (Currently !M!)"
   },
   "${modID}:VoiceOfYumina": {
     "NAME": "VoiceOfYumina",
@@ -221,8 +221,8 @@
   },
   "${modID}:OffGuard": {
     "NAME": "OffGuard",
-    "DESCRIPTION": "Deal !D! Damage and Draw 1 Card, if Drawn card is a skill gain 1 Energy. NL Cost 1 Mana",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage and Draw 2 Card, if Drawn card is a skill gain 1 Energy. NL Cost 1 Mana"
+    "DESCRIPTION": "Deal !D! Damage and Draw 1 Card. Gain 1 Energy for each Skill drawn. NL Cost 1 Mana",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage and Draw 2 Cards. Gain 1 Energy for each Skill drawn. NL Cost 1 Mana"
   },
   "${modID}:WitchsDomain": {
     "NAME": "Witch's Domain",
@@ -241,8 +241,8 @@
   },
   "${modID}:FlatSnark": {
     "NAME": "FlatSnark",
-    "DESCRIPTION": "Deal !D! Damage. Apply 2 Weakness. If enemy is below 50% HP, deal 2x Damage. NL Cost 6 Mana. NL Exhaust",
-    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Apply 3 Weakness. If enemy is below 50% HP, deal 2x Damage. NL Cost 6 Mana. NL Exhaust"
+    "DESCRIPTION": "Deal !D! Damage. Apply 2 Weakness. If the enemy's HP is at or below 50%, deal 2x Damage. NL Cost 6 Mana. NL Exhaust",
+    "UPGRADE_DESCRIPTION": "Deal !D! Damage. Apply 3 Weakness. If the enemy's HP is at or below 50%, deal 2x Damage. NL Cost 6 Mana. NL Exhaust"
   },
   "${modID}:ThamesTroll": {
     "NAME": "ThamesTroll",

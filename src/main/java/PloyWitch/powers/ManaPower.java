@@ -44,6 +44,11 @@ public class ManaPower extends AbstractPower {
         manaGeneratedThisTurn = 0;
     }
 
+    public static void recordManaGenerated(int amount) {
+        manaGeneratedThisCombat += amount;
+        manaGeneratedThisTurn += amount;
+    }
+
     public void enableManaGainDoubling() {
         this.manaGainDoubledThisTurn = true;
     }

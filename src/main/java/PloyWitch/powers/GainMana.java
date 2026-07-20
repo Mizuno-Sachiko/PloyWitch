@@ -23,15 +23,19 @@ public class GainMana extends AbstractGameAction {
             gain *= 2;
         }
 
-        ManaPower.manaGeneratedThisCombat += gain;
-        ManaPower.manaGeneratedThisTurn += gain;
+        int currentMana = mana == null ? 0 : mana.amount;
+        int actualGain = Math.min(gain, ManaPower.MAX_MANA - currentMana);
 
-        addToTop(new ApplyPowerAction(
-                AbstractDungeon.player,
-                AbstractDungeon.player,
-                new ManaPower(AbstractDungeon.player, gain),
-                gain
-        ));
+        if (actualGain > 0) {
+            ManaPower.recordManaGenerated(actualGain);
+
+            addToTop(new ApplyPowerAction(
+                    AbstractDungeon.player,
+                    AbstractDungeon.player,
+                    new ManaPower(AbstractDungeon.player, actualGain),
+                    actualGain
+            ));
+        }
 
         isDone = true;
     }

@@ -3,6 +3,7 @@ package PloyWitch.relics;
 import PloyWitch.character.Alice;
 import PloyWitch.powers.GainMana;
 import com.evacipated.cardcrawl.mod.stslib.relics.OnApplyPowerRelic;
+import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.powers.AbstractPower;
 import com.megacrit.cardcrawl.powers.WeakPower;
@@ -25,8 +26,24 @@ public class GazeOfTheMoon extends BaseRelic implements OnApplyPowerRelic {
     @Override
     public boolean onApplyPower(AbstractPower power, AbstractCreature target, AbstractCreature source) {
 
-        if (power instanceof WeakPower) {
-            addToBot(new GainMana(MANA_GAIN));
+        if (power instanceof WeakPower && target != null) {
+            AbstractCreature powerTarget = target;
+            AbstractPower currentWeak = powerTarget.getPower(WeakPower.POWER_ID);
+            int weakAmount = currentWeak == null ? 0 : currentWeak.amount;
+
+            addToTop(new AbstractGameAction() {
+                @Override
+                public void update() {
+                    AbstractPower appliedWeak = powerTarget.getPower(WeakPower.POWER_ID);
+
+                    if (appliedWeak != null && appliedWeak.amount > weakAmount) {
+                        GazeOfTheMoon.this.flash();
+                        addToTop(new GainMana(MANA_GAIN));
+                    }
+
+                    isDone = true;
+                }
+            });
         }
 
         return true;

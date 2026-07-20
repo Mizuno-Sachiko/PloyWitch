@@ -19,17 +19,17 @@
     "NAME": "Gaze Of The Moon",
     "FLAVOR": "Oil of the moon', 'The Unreahable' it goes by many names yet one intention to degrade its enemies into dust,",
     "DESCRIPTIONS": [
-      "When applying weakness gain #b",
+      "Whenever you apply Weak, gain #b",
       " #yMana."
 
     ]
   },
   "${modID}:SnowWhite": {
-"NAME": "Snow White",
-"FLAVOR": "Completely useless but still worth keeping. The snowfall is calming",
-"DESCRIPTIONS": [
-"Replaces DiddleDiddle. At the start of combat, gain #b",
-" #yMana and #b1 #yMana per turn."
+    "NAME": "Snow White",
+    "FLAVOR": "Completely useless but still worth keeping. The snowfall is calming",
+    "DESCRIPTIONS": [
+      "Replaces DiddleDiddle. At the start of combat, gain #b",
+      " #yMana. Starting from your 2nd turn, gain #b1 #yMana at the start of each turn."
 
 ]
 },

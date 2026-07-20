@@ -1,16 +1,10 @@
 package PloyWitch.cards;
 
 import PloyWitch.character.Alice;
-import PloyWitch.powers.GainMana;
 import PloyWitch.powers.ManaPower;
+import PloyWitch.powers.WanderSnatchAction;
 import PloyWitch.util.CardStats;
-import com.megacrit.cardcrawl.actions.AbstractGameAction;
-import com.megacrit.cardcrawl.actions.common.DamageAllEnemiesAction;
-import com.megacrit.cardcrawl.actions.common.HealAction;
-import com.megacrit.cardcrawl.actions.utility.WaitAction;
-import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 public class WanderSnatch extends BaseCard {
@@ -66,48 +60,12 @@ public class WanderSnatch extends BaseCard {
             mana.spendMana(MANA_COST);
         }
 
-        addToBot(new DamageAllEnemiesAction(
+        addToBot(new WanderSnatchAction(
                 p,
                 multiDamage,
-                DamageInfo.DamageType.NORMAL,
-                AbstractGameAction.AttackEffect.SLASH_VERTICAL
+                upgraded ? (MANA_GAIN + UPG_MANA_GAIN) : MANA_GAIN,
+                upgraded ? (HEAL + UPG_HEAL) : HEAL
         ));
-
-        addToBot(new WaitAction(0.1f));
-
-        addToBot(new AbstractGameAction() {
-            @Override
-            public void update() {
-
-                int kills = 0;
-
-                for (AbstractMonster mo : AbstractDungeon.getMonsters().monsters) {
-
-                    if (mo == null) continue;
-                    if (mo.halfDead) continue;
-
-                    if (mo.isDead || mo.isDying) {
-                        kills++;
-                    }
-                }
-
-                if (kills > 0) {
-
-                    for (int i = 0; i < kills; i++) {
-
-                        addToTop(new HealAction(
-                                p,
-                                p,
-                                upgraded ? (HEAL + UPG_HEAL) : HEAL
-                        ));
-
-                        addToTop(new GainMana(upgraded ? (MANA_GAIN + UPG_MANA_GAIN) : MANA_GAIN));
-                    }
-                }
-
-                isDone = true;
-            }
-        });
     }
 
     @Override

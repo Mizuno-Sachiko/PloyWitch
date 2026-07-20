@@ -1,6 +1,7 @@
 package PloyWitch.powers;
 
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
+import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.core.AbstractCreature;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -33,7 +34,8 @@ public class BreakDownPower extends BasePower {
                 if (!opened) {
 
                     if (AbstractDungeon.player.hand.isEmpty()) {
-                        addToTop(new GainMana(1)); // ✔ CHANGED
+                        addToTop(new GainMana(1));
+                        addToTop(new DrawCardAction(1));
                         isDone = true;
                         return;
                     }
@@ -60,8 +62,8 @@ public class BreakDownPower extends BasePower {
 
                     AbstractDungeon.gridSelectScreen.selectedCards.clear();
 
-                    addToTop(new GainMana(1)); // ✔ CHANGED
-                    addToTop(new com.megacrit.cardcrawl.actions.common.DrawCardAction(1));
+                    addToTop(new GainMana(1));
+                    addToTop(new DrawCardAction(1));
 
                     isDone = true;
                 }

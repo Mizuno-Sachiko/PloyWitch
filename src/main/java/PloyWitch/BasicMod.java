@@ -4,6 +4,7 @@ import PloyWitch.events.BlueGarden;
 import PloyWitch.events.KitsyLand;
 import PloyWitch.events.PloyShop;
 import PloyWitch.events.ShinyStarEvent;
+import PloyWitch.powers.ManaPower;
 import PloyWitch.relics.BaseRelic;
 import PloyWitch.util.*;
 import basemod.BaseMod;
@@ -25,6 +26,7 @@ import com.evacipated.cardcrawl.modthespire.lib.SpireInitializer;
 import com.google.gson.Gson;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+import com.megacrit.cardcrawl.rooms.AbstractRoom;
 import com.megacrit.cardcrawl.unlock.UnlockTracker;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -43,7 +45,8 @@ public class BasicMod implements
         EditStringsSubscriber,
         EditKeywordsSubscriber,
         AddAudioSubscriber,
-        PostInitializeSubscriber {
+        PostInitializeSubscriber,
+        OnStartBattleSubscriber {
 
     @Override
     public void receiveEditCards() { //somewhere in the class
@@ -75,6 +78,11 @@ public class BasicMod implements
     public BasicMod() {
         BaseMod.subscribe(this); //This will make BaseMod trigger all the subscribers at their appropriate times.
         logger.info(modID + " subscribed to BaseMod.");
+    }
+
+    @Override
+    public void receiveOnBattleStart(AbstractRoom room) {
+        ManaPower.resetManaTracking();
     }
 
     @Override

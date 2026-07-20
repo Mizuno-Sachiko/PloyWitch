@@ -16,8 +16,8 @@ public class BreakDownPower extends BasePower {
     private static final AbstractPower.PowerType TYPE = AbstractPower.PowerType.BUFF;
     private static final boolean TURN_BASED = false;
 
-    public BreakDownPower(AbstractCreature owner, int amount) {
-        super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+    public BreakDownPower(AbstractCreature owner) {
+        super(POWER_ID, TYPE, TURN_BASED, owner, -1);
     }
 
     @Override

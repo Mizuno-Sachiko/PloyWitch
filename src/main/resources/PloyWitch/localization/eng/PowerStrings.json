@@ -29,15 +29,16 @@
   "${modID}:TeaTime": {
     "NAME": "TeaTime",
     "DESCRIPTIONS": [
-      "Heal X at the end of battle",
-      "Heal X at the end of battle"
+      "Heal #b",
+      " HP at the end of battle."
     ]
   },
   "${modID}:ShinyStar": {
     "NAME": "ShinyStar",
     "DESCRIPTIONS": [
-      "At the start of each turn, play an Alice card for free.",
-      "At the start of each turn, play an Alice card for free."
+      "At the start of each turn, trigger the selected Alice card's effects for free.",
+      " NL Selected card: ",
+      "."
     ]
   },
   "${modID}:Flowing": {
@@ -59,13 +60,6 @@
     "DESCRIPTIONS": [
       "Whenever you play a non-Power card, it costs +1 Mana and is played a second time.",
       "Whenever you play a non-Power card, it costs +1 Mana and is played a second time."
-    ]
-  },
-  "${modID}:SkillDetection": {
-    "NAME": "SkillDetection",
-    "DESCRIPTIONS": [
-      "If Drawn Card is a skill gain Energy",
-      "If Drawn Card is a skill gain Energy"
     ]
   }
 }

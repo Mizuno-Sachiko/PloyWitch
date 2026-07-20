@@ -47,8 +47,8 @@
     "NAME": "May Riddell",
     "FLAVOR": "Annoying but harmless",
     "DESCRIPTIONS": [
-      "If you have 5 or more Mana +2 to Dexterity",
-      "  and Strength."
+      "At the start of your turn, if you have 5 or more Mana, gain 2 Dexterity",
+      " and 2 Strength."
 
     ]
   },

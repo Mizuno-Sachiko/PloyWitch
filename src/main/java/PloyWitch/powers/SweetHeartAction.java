@@ -1,5 +1,7 @@
 package PloyWitch.powers;
 
+import basemod.cardmods.ExhaustMod;
+import basemod.helpers.CardModifierManager;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInHandAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -43,9 +45,7 @@ public class SweetHeartAction extends AbstractGameAction {
 
             AbstractCard copy = selected.makeStatEquivalentCopy();
 
-            copy.exhaust = true;
-
-
+            CardModifierManager.addModifier(copy, new ExhaustMod());
 
             addToTop(new MakeTempCardInHandAction(copy));
 

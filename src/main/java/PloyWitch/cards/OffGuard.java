@@ -2,8 +2,7 @@ package PloyWitch.cards;
 
 import PloyWitch.character.Alice;
 import PloyWitch.powers.ManaPower;
-import PloyWitch.powers.SkillDetection;
-import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import PloyWitch.powers.OffGuardAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import PloyWitch.util.CardStats;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -67,16 +66,9 @@ public class OffGuard extends BaseCard {
         ));
 
 
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new SkillDetection(p, this.magicNumber),
-                this.magicNumber
-        ));
-
         addToBot(new DrawCardAction(
-                p,
-                this.magicNumber
+                this.magicNumber,
+                new OffGuardAction()
         ));
     }
 

@@ -21,8 +21,8 @@ public class ShinyStarPower extends BasePower {
 
     private AbstractCard storedCard;
 
-    public ShinyStarPower(AbstractCreature owner, int amount) {
-        super(POWER_ID, TYPE, TURN_BASED, owner, amount);
+    public ShinyStarPower(AbstractCreature owner) {
+        super(POWER_ID, TYPE, TURN_BASED, owner, -1);
         openSelection();
     }
 
@@ -67,6 +67,8 @@ public class ShinyStarPower extends BasePower {
                     storedCard = AbstractDungeon.gridSelectScreen.selectedCards
                             .get(0)
                             .makeStatEquivalentCopy();
+
+                    ShinyStarPower.this.updateDescription();
 
                     AbstractDungeon.gridSelectScreen.selectedCards.clear();
 
@@ -120,5 +122,9 @@ public class ShinyStarPower extends BasePower {
     @Override
     public void updateDescription() {
         this.description = DESCRIPTIONS[0];
+
+        if (storedCard != null) {
+            this.description += DESCRIPTIONS[1] + storedCard.name + DESCRIPTIONS[2];
+        }
     }
 }

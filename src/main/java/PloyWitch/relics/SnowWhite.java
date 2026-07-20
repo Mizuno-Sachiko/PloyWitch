@@ -40,6 +40,7 @@ public class SnowWhite extends BaseRelic {
 
     @Override
     public void atBattleStart() {
+        firstTurn = true;
         addToBot(new GainMana(MANA_GAIN));
     }
 

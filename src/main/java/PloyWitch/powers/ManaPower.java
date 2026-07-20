@@ -39,6 +39,11 @@ public class ManaPower extends AbstractPower {
         return CardCrawlGame.languagePack.getUIString(POWER_ID).TEXT[0];
     }
 
+    public static void resetManaTracking() {
+        manaGeneratedThisCombat = 0;
+        manaGeneratedThisTurn = 0;
+    }
+
     public void enableManaGainDoubling() {
         this.manaGainDoubledThisTurn = true;
     }
@@ -59,6 +64,9 @@ public class ManaPower extends AbstractPower {
     public boolean spendMana(int cost) {
 
 
+        if (cost == 0) {
+            return true;
+        }
 
         if (SHINY_STAR_FREE) {
             SHINY_STAR_FREE = false;
@@ -94,7 +102,7 @@ public class ManaPower extends AbstractPower {
     //Used Mainly For "Devour"
     @Override
     public void onVictory() {
-        manaGeneratedThisCombat = 0;
+        resetManaTracking();
     }
 
     //Used for "Break"

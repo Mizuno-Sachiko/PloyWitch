@@ -26,13 +26,13 @@ public class VoiceOfYumina extends BaseCard {
     @Override
     public void use(AbstractPlayer p, AbstractMonster m) {
 
-        // Apply power
-        addToBot(new ApplyPowerAction(
-                p,
-                p,
-                new Voice(p, 1),
-                1
-        ));
+        if (!p.hasPower(Voice.POWER_ID)) {
+            addToBot(new ApplyPowerAction(
+                    p,
+                    p,
+                    new Voice(p)
+            ));
+        }
     }
 
     @Override

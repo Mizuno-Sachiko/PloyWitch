@@ -51,7 +51,9 @@ public class Barrier extends BaseCard {
 
         addToBot(new GainBlockAction(p, p, block));
         ManaPower mana = (ManaPower) p.getPower(ManaPower.POWER_ID);
-        mana.amount = 0;
+        if (mana != null) {
+            mana.spendMana(mana.amount);
+        }
 
     }
 }
